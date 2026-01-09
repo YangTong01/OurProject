@@ -1,0 +1,153 @@
+{
+  "granularity": "month",
+  "repo_id": 1,
+  "series": [
+    {
+      "bucket": "2023-10",
+      "churn": 6,
+      "commits": 4,
+      "deletions": 3,
+      "insertions": 3
+    },
+    {
+      "bucket": "2023-11",
+      "churn": 1211,
+      "commits": 14,
+      "deletions": 550,
+      "insertions": 661
+    },
+    {
+      "bucket": "2023-12",
+      "churn": 31,
+      "commits": 6,
+      "deletions": 14,
+      "insertions": 17
+    },
+    {
+      "bucket": "2024-01",
+      "churn": 753,
+      "commits": 11,
+      "deletions": 319,
+      "insertions": 434
+    },
+    {
+      "bucket": "2024-02",
+      "churn": 68,
+      "commits": 8,
+      "deletions": 24,
+      "insertions": 44
+    },
+    {
+      "bucket": "2024-04",
+      "churn": 1466,
+      "commits": 14,
+      "deletions": 683,
+      "insertions": 783
+    },
+    {
+      "bucket": "2024-05",
+      "churn": 71,
+      "commits": 11,
+      "deletions": 32,
+      "insertions": 39
+    },
+    {
+      "bucket": "2024-06",
+      "churn": 36,
+      "commits": 4,
+      "deletions": 12,
+      "insertions": 24
+    },
+    {
+      "bucket": "2024-07",
+      "churn": 168,
+      "commits": 5,
+      "deletions": 70,
+      "insertions": 98
+    },
+    {
+      "bucket": "2024-08",
+      "churn": 463,
+      "commits": 10,
+      "deletions": 235,
+      "insertions": 228
+    },
+    {
+      "bucket": "2024-09",
+      "churn": 48,
+      "commits": 4,
+      "deletions": 16,
+      "insertions": 32
+    },
+    {
+      "bucket": "2024-10",
+      "churn": 498,
+      "commits": 13,
+      "deletions": 252,
+      "insertions": 246
+    },
+    {
+      "bucket": "2024-11",
+      "churn": 1276,
+      "commits": 22,
+      "deletions": 422,
+      "insertions": 854
+    },
+    {
+      "bucket": "2025-01",
+      "churn": 690,
+      "commits": 4,
+      "deletions": 646,
+      "insertions": 44
+    },
+    {
+      "bucket": "2025-03",
+      "churn": 228,
+      "commits": 11,
+      "deletions": 125,
+      "insertions": 103
+    },
+    {
+      "bucket": "2025-05",
+      "churn": 2883,
+      "commits": 8,
+      "deletions": 867,
+      "insertions": 2016
+    },
+    {
+      "bucket": "2025-06",
+      "churn": 679,
+      "commits": 7,
+      "deletions": 317,
+      "insertions": 362
+    },
+    {
+      "bucket": "2025-08",
+      "churn": 1820,
+      "commits": 13,
+      "deletions": 707,
+      "insertions": 1113
+    },
+    {
+      "bucket": "2025-09",
+      "churn": 2025,
+      "commits": 2,
+      "deletions": 1079,
+      "insertions": 946
+    },
+    {
+      "bucket": "2025-10",
+      "churn": 10,
+      "commits": 1,
+      "deletions": 5,
+      "insertions": 5
+    },
+    {
+      "bucket": "2025-11",
+      "churn": 1703,
+      "commits": 3,
+      "deletions": 651,
+      "insertions": 1052
+    }
+  ]
+}
