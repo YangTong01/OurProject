@@ -1,0 +1,35 @@
+{
+  "total_commits":5474,
+  "time_range_start":"2010-04-06 11:12:57",
+  "time_range_end":"2025-11-17 18:05:51",
+  "total_contributors":852,
+  "weekend_ratio":0.2383997077,
+  "top_5_months_by_commits":{
+    "2010-04":169,
+    "2017-05":166,
+    "2010-07":165,
+    "2019-05":127,
+    "2021-05":114
+  },
+  "top_10_contributors":{
+    "David Lord":1781,
+    "Armin Ronacher":1191,
+    "Markus Unterwaditzer":274,
+    "Ron DuPlain":122,
+    "Kenneth Reitz":116,
+    "Grey Li":105,
+    "dependabot-preview[bot]":91,
+    "Daniel Neuhäuser":70,
+    "dependabot[bot]":61,
+    "pgjones":49
+  },
+  "commit_type_counts":{
+    "other":2541,
+    "fix":1176,
+    "feat":656,
+    "doc":513,
+    "chore":319,
+    "test":216,
+    "refactor":53
+  }
+}
