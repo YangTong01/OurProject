@@ -1,0 +1,40 @@
+Flask Code Evolution Analysis Summary
+==================================================
+
+Analysis Date: 2026-01-10 21:19:15
+Total Commits: 5474
+Time Period: 2010-04-06 11:12:57 to 2025-11-17 18:05:51
+Unique Authors: 852
+Average Commit Size: 3.16 files
+Average Lines Changed per Commit: 94.39 lines
+
+Latest Code Statistics:
+  Total Files: 226
+  Total Lines: 39114
+  Source Files: 34
+  Test Files: 54
+
+Test Coverage Trend: N/A
+
+Commit Type Distribution:
+  other: 1884 (34.4%)
+  fix: 1551 (28.3%)
+  feat: 715 (13.1%)
+  doc: 660 (12.1%)
+  ci: 294 (5.4%)
+  test: 209 (3.8%)
+  refactor: 120 (2.2%)
+  style: 29 (0.5%)
+  build: 12 (0.2%)
+
+Top 10 Contributors:
+   1. David Lord                               1781 (32.5%)
+   2. Armin Ronacher                           1191 (21.8%)
+   3. Markus Unterwaditzer                      274 (5.0%)
+   4. Ron DuPlain                               122 (2.2%)
+   5. Kenneth Reitz                             116 (2.1%)
+   6. Grey Li                                   105 (1.9%)
+   7. dependabot-preview[bot]                    91 (1.7%)
+   8. Daniel Neuhäuser                          70 (1.3%)
+   9. dependabot[bot]                            61 (1.1%)
+  10. pgjones                                    49 (0.9%)

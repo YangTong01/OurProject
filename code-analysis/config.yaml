@@ -1,0 +1,21 @@
+project:
+  name: "Flask Code Evolution Analysis"
+  flask_repo_url: "https://github.com/pallets/flask.git"
+  clone_path: "./flask_repo"
+  
+analysis:
+  start_date: "2010-04-01"  # Flask初始发布年份
+  end_date: "2024-01-01"
+  sampling_rate: "monthly"  # monthly, weekly, yearly
+  
+code_categories:
+  source_dirs: ["flask", "src"]
+  test_dirs: ["tests", "tests.py"]
+  doc_dirs: ["docs", "examples"]
+  
+file_types:
+  python: ["*.py"]
+  test: ["test_*.py", "*_test.py"]
+  documentation: ["*.md", "*.rst", "*.txt"]
+  config: ["*.yml", "*.yaml", "*.toml", "setup.cfg", "pyproject.toml"]
+  other: ["*.js", "*.css", "*.html"]
