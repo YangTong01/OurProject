@@ -1,0 +1,10 @@
+=== KPI Summary ===
+Total commits: 175
+Active days: 68
+Active developers: 36
+Avg commits/day: 0.048
+
+Core team coverage (Top-10): 0.8514
+Top10 share: 0.8514
+Gini: 0.7608
+HHI: 0.4511

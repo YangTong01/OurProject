@@ -1,0 +1,502 @@
+﻿{
+    "collaboration_network":  null,
+    "community":  {
+                      "active_devs_by_month":  [
+                                                   {
+                                                       "active_devs":  3,
+                                                       "churn":  6,
+                                                       "commits":  4,
+                                                       "month":  "2023-10"
+                                                   },
+                                                   {
+                                                       "active_devs":  3,
+                                                       "churn":  1211,
+                                                       "commits":  14,
+                                                       "month":  "2023-11"
+                                                   },
+                                                   {
+                                                       "active_devs":  5,
+                                                       "churn":  31,
+                                                       "commits":  6,
+                                                       "month":  "2023-12"
+                                                   },
+                                                   {
+                                                       "active_devs":  3,
+                                                       "churn":  753,
+                                                       "commits":  11,
+                                                       "month":  "2024-01"
+                                                   },
+                                                   {
+                                                       "active_devs":  6,
+                                                       "churn":  68,
+                                                       "commits":  8,
+                                                       "month":  "2024-02"
+                                                   },
+                                                   {
+                                                       "active_devs":  0,
+                                                       "churn":  0,
+                                                       "commits":  0,
+                                                       "month":  "2024-03"
+                                                   },
+                                                   {
+                                                       "active_devs":  3,
+                                                       "churn":  1466,
+                                                       "commits":  14,
+                                                       "month":  "2024-04"
+                                                   },
+                                                   {
+                                                       "active_devs":  7,
+                                                       "churn":  71,
+                                                       "commits":  11,
+                                                       "month":  "2024-05"
+                                                   },
+                                                   {
+                                                       "active_devs":  3,
+                                                       "churn":  36,
+                                                       "commits":  4,
+                                                       "month":  "2024-06"
+                                                   },
+                                                   {
+                                                       "active_devs":  4,
+                                                       "churn":  168,
+                                                       "commits":  5,
+                                                       "month":  "2024-07"
+                                                   },
+                                                   {
+                                                       "active_devs":  3,
+                                                       "churn":  463,
+                                                       "commits":  10,
+                                                       "month":  "2024-08"
+                                                   },
+                                                   {
+                                                       "active_devs":  2,
+                                                       "churn":  48,
+                                                       "commits":  4,
+                                                       "month":  "2024-09"
+                                                   },
+                                                   {
+                                                       "active_devs":  3,
+                                                       "churn":  498,
+                                                       "commits":  13,
+                                                       "month":  "2024-10"
+                                                   },
+                                                   {
+                                                       "active_devs":  3,
+                                                       "churn":  1276,
+                                                       "commits":  22,
+                                                       "month":  "2024-11"
+                                                   },
+                                                   {
+                                                       "active_devs":  0,
+                                                       "churn":  0,
+                                                       "commits":  0,
+                                                       "month":  "2024-12"
+                                                   },
+                                                   {
+                                                       "active_devs":  1,
+                                                       "churn":  690,
+                                                       "commits":  4,
+                                                       "month":  "2025-01"
+                                                   },
+                                                   {
+                                                       "active_devs":  0,
+                                                       "churn":  0,
+                                                       "commits":  0,
+                                                       "month":  "2025-02"
+                                                   },
+                                                   {
+                                                       "active_devs":  6,
+                                                       "churn":  228,
+                                                       "commits":  11,
+                                                       "month":  "2025-03"
+                                                   },
+                                                   {
+                                                       "active_devs":  0,
+                                                       "churn":  0,
+                                                       "commits":  0,
+                                                       "month":  "2025-04"
+                                                   },
+                                                   {
+                                                       "active_devs":  3,
+                                                       "churn":  2883,
+                                                       "commits":  8,
+                                                       "month":  "2025-05"
+                                                   },
+                                                   {
+                                                       "active_devs":  2,
+                                                       "churn":  679,
+                                                       "commits":  7,
+                                                       "month":  "2025-06"
+                                                   },
+                                                   {
+                                                       "active_devs":  0,
+                                                       "churn":  0,
+                                                       "commits":  0,
+                                                       "month":  "2025-07"
+                                                   },
+                                                   {
+                                                       "active_devs":  5,
+                                                       "churn":  1820,
+                                                       "commits":  13,
+                                                       "month":  "2025-08"
+                                                   },
+                                                   {
+                                                       "active_devs":  1,
+                                                       "churn":  2025,
+                                                       "commits":  2,
+                                                       "month":  "2025-09"
+                                                   },
+                                                   {
+                                                       "active_devs":  1,
+                                                       "churn":  10,
+                                                       "commits":  1,
+                                                       "month":  "2025-10"
+                                                   },
+                                                   {
+                                                       "active_devs":  1,
+                                                       "churn":  1703,
+                                                       "commits":  3,
+                                                       "month":  "2025-11"
+                                                   }
+                                               ],
+                      "churn_window_months":  2,
+                      "lost_devs_by_month":  [
+                                                 {
+                                                     "lost_devs":  0,
+                                                     "month":  "2023-10"
+                                                 },
+                                                 {
+                                                     "lost_devs":  0,
+                                                     "month":  "2023-11"
+                                                 },
+                                                 {
+                                                     "lost_devs":  3,
+                                                     "month":  "2023-12"
+                                                 },
+                                                 {
+                                                     "lost_devs":  1,
+                                                     "month":  "2024-01"
+                                                 },
+                                                 {
+                                                     "lost_devs":  2,
+                                                     "month":  "2024-02"
+                                                 },
+                                                 {
+                                                     "lost_devs":  0,
+                                                     "month":  "2024-03"
+                                                 },
+                                                 {
+                                                     "lost_devs":  3,
+                                                     "month":  "2024-04"
+                                                 },
+                                                 {
+                                                     "lost_devs":  0,
+                                                     "month":  "2024-05"
+                                                 },
+                                                 {
+                                                     "lost_devs":  0,
+                                                     "month":  "2024-06"
+                                                 },
+                                                 {
+                                                     "lost_devs":  4,
+                                                     "month":  "2024-07"
+                                                 },
+                                                 {
+                                                     "lost_devs":  1,
+                                                     "month":  "2024-08"
+                                                 },
+                                                 {
+                                                     "lost_devs":  1,
+                                                     "month":  "2024-09"
+                                                 },
+                                                 {
+                                                     "lost_devs":  2,
+                                                     "month":  "2024-10"
+                                                 },
+                                                 {
+                                                     "lost_devs":  1,
+                                                     "month":  "2024-11"
+                                                 },
+                                                 {
+                                                     "lost_devs":  2,
+                                                     "month":  "2024-12"
+                                                 },
+                                                 {
+                                                     "lost_devs":  2,
+                                                     "month":  "2025-01"
+                                                 },
+                                                 {
+                                                     "lost_devs":  0,
+                                                     "month":  "2025-02"
+                                                 },
+                                                 {
+                                                     "lost_devs":  0,
+                                                     "month":  "2025-03"
+                                                 },
+                                                 {
+                                                     "lost_devs":  0,
+                                                     "month":  "2025-04"
+                                                 },
+                                                 {
+                                                     "lost_devs":  5,
+                                                     "month":  "2025-05"
+                                                 },
+                                                 {
+                                                     "lost_devs":  0,
+                                                     "month":  "2025-06"
+                                                 },
+                                                 {
+                                                     "lost_devs":  2,
+                                                     "month":  "2025-07"
+                                                 },
+                                                 {
+                                                     "lost_devs":  1,
+                                                     "month":  "2025-08"
+                                                 },
+                                                 {
+                                                     "lost_devs":  0,
+                                                     "month":  "2025-09"
+                                                 },
+                                                 {
+                                                     "lost_devs":  4,
+                                                     "month":  "2025-10"
+                                                 },
+                                                 {
+                                                     "lost_devs":  0,
+                                                     "month":  "2025-11"
+                                                 }
+                                             ],
+                      "max_month":  "2025-11",
+                      "min_month":  "2023-10",
+                      "months":  [
+                                     "2023-10",
+                                     "2023-11",
+                                     "2023-12",
+                                     "2024-01",
+                                     "2024-02",
+                                     "2024-03",
+                                     "2024-04",
+                                     "2024-05",
+                                     "2024-06",
+                                     "2024-07",
+                                     "2024-08",
+                                     "2024-09",
+                                     "2024-10",
+                                     "2024-11",
+                                     "2024-12",
+                                     "2025-01",
+                                     "2025-02",
+                                     "2025-03",
+                                     "2025-04",
+                                     "2025-05",
+                                     "2025-06",
+                                     "2025-07",
+                                     "2025-08",
+                                     "2025-09",
+                                     "2025-10",
+                                     "2025-11"
+                                 ],
+                      "new_devs_by_month":  [
+                                                {
+                                                    "month":  "2023-10",
+                                                    "new_devs":  3
+                                                },
+                                                {
+                                                    "month":  "2023-11",
+                                                    "new_devs":  3
+                                                },
+                                                {
+                                                    "month":  "2023-12",
+                                                    "new_devs":  3
+                                                },
+                                                {
+                                                    "month":  "2024-01",
+                                                    "new_devs":  0
+                                                },
+                                                {
+                                                    "month":  "2024-02",
+                                                    "new_devs":  3
+                                                },
+                                                {
+                                                    "month":  "2024-03",
+                                                    "new_devs":  0
+                                                },
+                                                {
+                                                    "month":  "2024-04",
+                                                    "new_devs":  1
+                                                },
+                                                {
+                                                    "month":  "2024-05",
+                                                    "new_devs":  4
+                                                },
+                                                {
+                                                    "month":  "2024-06",
+                                                    "new_devs":  0
+                                                },
+                                                {
+                                                    "month":  "2024-07",
+                                                    "new_devs":  1
+                                                },
+                                                {
+                                                    "month":  "2024-08",
+                                                    "new_devs":  0
+                                                },
+                                                {
+                                                    "month":  "2024-09",
+                                                    "new_devs":  1
+                                                },
+                                                {
+                                                    "month":  "2024-10",
+                                                    "new_devs":  2
+                                                },
+                                                {
+                                                    "month":  "2024-11",
+                                                    "new_devs":  2
+                                                },
+                                                {
+                                                    "month":  "2024-12",
+                                                    "new_devs":  0
+                                                },
+                                                {
+                                                    "month":  "2025-01",
+                                                    "new_devs":  0
+                                                },
+                                                {
+                                                    "month":  "2025-02",
+                                                    "new_devs":  0
+                                                },
+                                                {
+                                                    "month":  "2025-03",
+                                                    "new_devs":  5
+                                                },
+                                                {
+                                                    "month":  "2025-04",
+                                                    "new_devs":  0
+                                                },
+                                                {
+                                                    "month":  "2025-05",
+                                                    "new_devs":  2
+                                                },
+                                                {
+                                                    "month":  "2025-06",
+                                                    "new_devs":  1
+                                                },
+                                                {
+                                                    "month":  "2025-07",
+                                                    "new_devs":  0
+                                                },
+                                                {
+                                                    "month":  "2025-08",
+                                                    "new_devs":  4
+                                                },
+                                                {
+                                                    "month":  "2025-09",
+                                                    "new_devs":  0
+                                                },
+                                                {
+                                                    "month":  "2025-10",
+                                                    "new_devs":  1
+                                                },
+                                                {
+                                                    "month":  "2025-11",
+                                                    "new_devs":  0
+                                                }
+                                            ]
+                  },
+    "concentration":  {
+                          "gini":  0.7607936507936508,
+                          "hhi":  0.45110204081632566,
+                          "n_developers":  36,
+                          "top10_share":  0.8514285714285714,
+                          "total_amount":  175
+                      },
+    "core_team":  {
+                      "core_amount":  149,
+                      "coverage":  0.8514285714285714,
+                      "definition":  "Top-10 by commits",
+                      "members":  [
+                                      {
+                                          "amount":  116,
+                                          "developer_id":  1,
+                                          "email":  "davidism@gmail.com",
+                                          "name":  "David Lord",
+                                          "share":  0.6628571428571428
+                                      },
+                                      {
+                                          "amount":  16,
+                                          "developer_id":  21,
+                                          "email":  "49699333+dependabot[bot]@users.noreply.github.com",
+                                          "name":  "dependabot[bot]",
+                                          "share":  0.09142857142857143
+                                      },
+                                      {
+                                          "amount":  8,
+                                          "developer_id":  20,
+                                          "email":  "66853113+pre-commit-ci[bot]@users.noreply.github.com",
+                                          "name":  "pre-commit-ci[bot]",
+                                          "share":  0.045714285714285714
+                                      },
+                                      {
+                                          "amount":  2,
+                                          "developer_id":  34,
+                                          "email":  "57943791+resistor-git@users.noreply.github.com",
+                                          "name":  "Resistor-git",
+                                          "share":  0.011428571428571429
+                                      },
+                                      {
+                                          "amount":  2,
+                                          "developer_id":  23,
+                                          "email":  "philip.graham.jones@googlemail.com",
+                                          "name":  "pgjones",
+                                          "share":  0.011428571428571429
+                                      },
+                                      {
+                                          "amount":  1,
+                                          "developer_id":  36,
+                                          "email":  "iztok@iztok-jr-fister.eu",
+                                          "name":  "Iztok Fister Jr",
+                                          "share":  0.005714285714285714
+                                      },
+                                      {
+                                          "amount":  1,
+                                          "developer_id":  35,
+                                          "email":  "arnout@bzzt.net",
+                                          "name":  "Arnout Engelen",
+                                          "share":  0.005714285714285714
+                                      },
+                                      {
+                                          "amount":  1,
+                                          "developer_id":  33,
+                                          "email":  "danielbcbs2@gmail.com",
+                                          "name":  "Daniel Isaac",
+                                          "share":  0.005714285714285714
+                                      },
+                                      {
+                                          "amount":  1,
+                                          "developer_id":  32,
+                                          "email":  "lizardwine@hotmail.com",
+                                          "name":  "lizard",
+                                          "share":  0.005714285714285714
+                                      },
+                                      {
+                                          "amount":  1,
+                                          "developer_id":  31,
+                                          "email":  "ben@hubtech.tv",
+                                          "name":  "Ben Huebscher",
+                                          "share":  0.005714285714285714
+                                      }
+                                  ],
+                      "top_n":  10,
+                      "total_amount":  175
+                  },
+    "params":  {
+                   "churn_window_months":  2,
+                   "end":  null,
+                   "include_network":  false,
+                   "metric":  "commits",
+                   "network_top_edges":  50,
+                   "start":  null,
+                   "top":  10
+               },
+    "repo_id":  1
+}
