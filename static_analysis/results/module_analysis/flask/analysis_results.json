@@ -1,0 +1,2277 @@
+{
+  "info": {
+    "name": "Flask核心源码分析",
+    "description": "Flask框架源代码的质量分析",
+    "include_patterns": [
+      "flask/"
+    ],
+    "exclude_patterns": [
+      "__pycache__/",
+      "venv/",
+      ".git/",
+      ".tox/",
+      "tests/",
+      "examples/",
+      "docs/",
+      "benchmarks/"
+    ]
+  },
+  "file_analysis": {
+    "total_files": 26,
+    "included_files": [
+      "app.py",
+      "blueprints.py",
+      "cli.py",
+      "config.py",
+      "ctx.py",
+      "debughelpers.py",
+      "globals.py",
+      "helpers.py",
+      "logging.py",
+      "sessions.py",
+      "signals.py",
+      "templating.py",
+      "typing.py",
+      "views.py",
+      "wrappers.py",
+      "__init__.py",
+      "__main__.py"
+    ],
+    "excluded_files": [
+      "py.typed",
+      "testing.py",
+      "json/provider.py",
+      "json/tag.py",
+      "json/__init__.py",
+      "sansio/app.py",
+      "sansio/blueprints.py",
+      "sansio/README.md",
+      "sansio/scaffold.py"
+    ],
+    "python_files": [
+      "app.py",
+      "blueprints.py",
+      "cli.py",
+      "config.py",
+      "ctx.py",
+      "debughelpers.py",
+      "globals.py",
+      "helpers.py",
+      "logging.py",
+      "sessions.py",
+      "signals.py",
+      "templating.py",
+      "typing.py",
+      "views.py",
+      "wrappers.py",
+      "__init__.py",
+      "__main__.py"
+    ],
+    "other_files": [],
+    "file_categories": {
+      "核心代码": [
+        "app.py",
+        "blueprints.py",
+        "cli.py",
+        "ctx.py",
+        "globals.py",
+        "logging.py",
+        "sessions.py",
+        "signals.py",
+        "templating.py",
+        "typing.py",
+        "views.py",
+        "wrappers.py",
+        "__init__.py"
+      ],
+      "配置": [
+        "config.py"
+      ],
+      "工具函数": [
+        "debughelpers.py",
+        "helpers.py"
+      ],
+      "入口文件": [
+        "__main__.py"
+      ]
+    }
+  },
+  "complexity": {
+    "functions": [
+      {
+        "name": "_make_timedelta",
+        "file": "app.py",
+        "line": 72,
+        "complexity": 3,
+        "has_docstring": false,
+        "arg_count": 1
+      },
+      {
+        "name": "remove_ctx",
+        "file": "app.py",
+        "line": 84,
+        "complexity": 3,
+        "has_docstring": false,
+        "arg_count": 1
+      },
+      {
+        "name": "add_ctx",
+        "file": "app.py",
+        "line": 96,
+        "complexity": 3,
+        "has_docstring": false,
+        "arg_count": 1
+      },
+      {
+        "name": "wrapper",
+        "file": "app.py",
+        "line": 85,
+        "complexity": 3,
+        "has_docstring": false,
+        "arg_count": 1
+      },
+      {
+        "name": "wrapper",
+        "file": "app.py",
+        "line": 97,
+        "complexity": 3,
+        "has_docstring": false,
+        "arg_count": 1
+      },
+      {
+        "name": "__init_subclass__",
+        "file": "app.py",
+        "line": 253,
+        "complexity": 10,
+        "has_docstring": false,
+        "arg_count": 1
+      },
+      {
+        "name": "__init__",
+        "file": "app.py",
+        "line": 309,
+        "complexity": 2,
+        "has_docstring": false,
+        "arg_count": 11
+      },
+      {
+        "name": "get_send_file_max_age",
+        "file": "app.py",
+        "line": 364,
+        "complexity": 3,
+        "has_docstring": true,
+        "arg_count": 2
+      },
+      {
+        "name": "send_static_file",
+        "file": "app.py",
+        "line": 391,
+        "complexity": 2,
+        "has_docstring": true,
+        "arg_count": 2
+      },
+      {
+        "name": "open_resource",
+        "file": "app.py",
+        "line": 413,
+        "complexity": 3,
+        "has_docstring": true,
+        "arg_count": 4
+      },
+      {
+        "name": "open_instance_resource",
+        "file": "app.py",
+        "line": 446,
+        "complexity": 2,
+        "has_docstring": true,
+        "arg_count": 4
+      },
+      {
+        "name": "create_jinja_environment",
+        "file": "app.py",
+        "line": 468,
+        "complexity": 4,
+        "has_docstring": true,
+        "arg_count": 1
+      },
+      {
+        "name": "create_url_adapter",
+        "file": "app.py",
+        "line": 508,
+        "complexity": 7,
+        "has_docstring": true,
+        "arg_count": 2
+      },
+      {
+        "name": "raise_routing_exception",
+        "file": "app.py",
+        "line": 561,
+        "complexity": 5,
+        "has_docstring": true,
+        "arg_count": 2
+      },
+      {
+        "name": "update_template_context",
+        "file": "app.py",
+        "line": 589,
+        "complexity": 5,
+        "has_docstring": true,
+        "arg_count": 3
+      },
+      {
+        "name": "make_shell_context",
+        "file": "app.py",
+        "line": 619,
+        "complexity": 2,
+        "has_docstring": true,
+        "arg_count": 1
+      },
+      {
+        "name": "run",
+        "file": "app.py",
+        "line": 631,
+        "complexity": 13,
+        "has_docstring": true,
+        "arg_count": 5
+      },
+      {
+        "name": "test_client",
+        "file": "app.py",
+        "line": 754,
+        "complexity": 2,
+        "has_docstring": true,
+        "arg_count": 2
+      },
+      {
+        "name": "test_cli_runner",
+        "file": "app.py",
+        "line": 812,
+        "complexity": 2,
+        "has_docstring": true,
+        "arg_count": 1
+      },
+      {
+        "name": "handle_http_exception",
+        "file": "app.py",
+        "line": 829,
+        "complexity": 4,
+        "has_docstring": true,
+        "arg_count": 3
+      },
+      {
+        "name": "handle_user_exception",
+        "file": "app.py",
+        "line": 864,
+        "complexity": 7,
+        "has_docstring": true,
+        "arg_count": 3
+      },
+      {
+        "name": "handle_exception",
+        "file": "app.py",
+        "line": 896,
+        "complexity": 6,
+        "has_docstring": true,
+        "arg_count": 3
+      },
+      {
+        "name": "log_exception",
+        "file": "app.py",
+        "line": 949,
+        "complexity": 1,
+        "has_docstring": true,
+        "arg_count": 3
+      },
+      {
+        "name": "dispatch_request",
+        "file": "app.py",
+        "line": 965,
+        "complexity": 4,
+        "has_docstring": true,
+        "arg_count": 2
+      },
+      {
+        "name": "full_dispatch_request",
+        "file": "app.py",
+        "line": 991,
+        "complexity": 4,
+        "has_docstring": true,
+        "arg_count": 2
+      },
+      {
+        "name": "finalize_request",
+        "file": "app.py",
+        "line": 1009,
+        "complexity": 4,
+        "has_docstring": true,
+        "arg_count": 4
+      },
+      {
+        "name": "make_default_options_response",
+        "file": "app.py",
+        "line": 1041,
+        "complexity": 1,
+        "has_docstring": true,
+        "arg_count": 2
+      },
+      {
+        "name": "ensure_sync",
+        "file": "app.py",
+        "line": 1053,
+        "complexity": 2,
+        "has_docstring": true,
+        "arg_count": 2
+      },
+      {
+        "name": "async_to_sync",
+        "file": "app.py",
+        "line": 1067,
+        "complexity": 3,
+        "has_docstring": true,
+        "arg_count": 2
+      },
+      {
+        "name": "url_for",
+        "file": "app.py",
+        "line": 1090,
+        "complexity": 14,
+        "has_docstring": true,
+        "arg_count": 1
+      },
+      {
+        "name": "make_response",
+        "file": "app.py",
+        "line": 1212,
+        "complexity": 17,
+        "has_docstring": true,
+        "arg_count": 2
+      },
+      {
+        "name": "preprocess_request",
+        "file": "app.py",
+        "line": 1354,
+        "complexity": 8,
+        "has_docstring": true,
+        "arg_count": 2
+      },
+      {
+        "name": "process_response",
+        "file": "app.py",
+        "line": 1382,
+        "complexity": 6,
+        "has_docstring": true,
+        "arg_count": 3
+      },
+      {
+        "name": "do_teardown_request",
+        "file": "app.py",
+        "line": 1408,
+        "complexity": 4,
+        "has_docstring": true,
+        "arg_count": 3
+      },
+      {
+        "name": "do_teardown_appcontext",
+        "file": "app.py",
+        "line": 1432,
+        "complexity": 2,
+        "has_docstring": true,
+        "arg_count": 3
+      },
+      {
+        "name": "app_context",
+        "file": "app.py",
+        "line": 1451,
+        "complexity": 1,
+        "has_docstring": true,
+        "arg_count": 1
+      },
+      {
+        "name": "request_context",
+        "file": "app.py",
+        "line": 1471,
+        "complexity": 1,
+        "has_docstring": true,
+        "arg_count": 2
+      },
+      {
+        "name": "test_request_context",
+        "file": "app.py",
+        "line": 1487,
+        "complexity": 2,
+        "has_docstring": true,
+        "arg_count": 1
+      },
+      {
+        "name": "wsgi_app",
+        "file": "app.py",
+        "line": 1536,
+        "complexity": 8,
+        "has_docstring": true,
+        "arg_count": 3
+      },
+      {
+        "name": "__call__",
+        "file": "app.py",
+        "line": 1584,
+        "complexity": 1,
+        "has_docstring": true,
+        "arg_count": 3
+      },
+      {
+        "name": "__init__",
+        "file": "blueprints.py",
+        "line": 19,
+        "complexity": 1,
+        "has_docstring": false,
+        "arg_count": 11
+      },
+      {
+        "name": "get_send_file_max_age",
+        "file": "blueprints.py",
+        "line": 55,
+        "complexity": 3,
+        "has_docstring": true,
+        "arg_count": 2
+      },
+      {
+        "name": "send_static_file",
+        "file": "blueprints.py",
+        "line": 82,
+        "complexity": 2,
+        "has_docstring": true,
+        "arg_count": 2
+      },
+      {
+        "name": "open_resource",
+        "file": "blueprints.py",
+        "line": 104,
+        "complexity": 3,
+        "has_docstring": true,
+        "arg_count": 4
+      },
+      {
+        "name": "find_best_app",
+        "file": "cli.py",
+        "line": 41,
+        "complexity": 11,
+        "has_docstring": true,
+        "arg_count": 1
+      },
+      {
+        "name": "_called_with_wrong_args",
+        "file": "cli.py",
+        "line": 94,
+        "complexity": 4,
+        "has_docstring": true,
+        "arg_count": 1
+      },
+      {
+        "name": "find_app_by_string",
+        "file": "cli.py",
+        "line": 120,
+        "complexity": 15,
+        "has_docstring": true,
+        "arg_count": 2
+      },
+      {
+        "name": "prepare_import",
+        "file": "cli.py",
+        "line": 200,
+        "complexity": 6,
+        "has_docstring": true,
+        "arg_count": 1
+      },
+      {
+        "name": "locate_app",
+        "file": "cli.py",
+        "line": 230,
+        "complexity": 1,
+        "has_docstring": false,
+        "arg_count": 3
+      },
+      {
+        "name": "locate_app",
+        "file": "cli.py",
+        "line": 236,
+        "complexity": 1,
+        "has_docstring": false,
+        "arg_count": 3
+      },
+      {
+        "name": "locate_app",
+        "file": "cli.py",
+        "line": 241,
+        "complexity": 6,
+        "has_docstring": false,
+        "arg_count": 3
+      },
+      {
+        "name": "get_version",
+        "file": "cli.py",
+        "line": 267,
+        "complexity": 3,
+        "has_docstring": false,
+        "arg_count": 3
+      },
+      {
+        "name": "with_appcontext",
+        "file": "cli.py",
+        "line": 380,
+        "complexity": 2,
+        "has_docstring": true,
+        "arg_count": 1
+      },
+      {
+        "name": "_set_app",
+        "file": "cli.py",
+        "line": 440,
+        "complexity": 2,
+        "has_docstring": false,
+        "arg_count": 3
+      },
+      {
+        "name": "_set_debug",
+        "file": "cli.py",
+        "line": 468,
+        "complexity": 3,
+        "has_docstring": false,
+        "arg_count": 3
+      },
+      {
+        "name": "_env_file_callback",
+        "file": "cli.py",
+        "line": 493,
+        "complexity": 6,
+        "has_docstring": false,
+        "arg_count": 3
+      },
+      {
+        "name": "_path_is_ancestor",
+        "file": "cli.py",
+        "line": 691,
+        "complexity": 1,
+        "has_docstring": true,
+        "arg_count": 2
+      },
+      {
+        "name": "load_dotenv",
+        "file": "cli.py",
+        "line": 698,
+        "complexity": 14,
+        "has_docstring": true,
+        "arg_count": 2
+      },
+      {
+        "name": "show_server_banner",
+        "file": "cli.py",
+        "line": 766,
+        "complexity": 4,
+        "has_docstring": true,
+        "arg_count": 2
+      },
+      {
+        "name": "_validate_key",
+        "file": "cli.py",
+        "line": 828,
+        "complexity": 10,
+        "has_docstring": true,
+        "arg_count": 3
+      },
+      {
+        "name": "run_command",
+        "file": "cli.py",
+        "line": 935,
+        "complexity": 6,
+        "has_docstring": true,
+        "arg_count": 9
+      },
+      {
+        "name": "shell_command",
+        "file": "cli.py",
+        "line": 1001,
+        "complexity": 6,
+        "has_docstring": true,
+        "arg_count": 0
+      },
+      {
+        "name": "routes_command",
+        "file": "cli.py",
+        "line": 1061,
+        "complexity": 10,
+        "has_docstring": true,
+        "arg_count": 2
+      },
+      {
+        "name": "main",
+        "file": "cli.py",
+        "line": 1122,
+        "complexity": 1,
+        "has_docstring": false,
+        "arg_count": 0
+      },
+      {
+        "name": "__init__",
+        "file": "cli.py",
+        "line": 305,
+        "complexity": 1,
+        "has_docstring": false,
+        "arg_count": 5
+      },
+      {
+        "name": "load_app",
+        "file": "cli.py",
+        "line": 333,
+        "complexity": 8,
+        "has_docstring": true,
+        "arg_count": 1
+      },
+      {
+        "name": "decorator",
+        "file": "cli.py",
+        "line": 395,
+        "complexity": 2,
+        "has_docstring": false,
+        "arg_count": 0
+      },
+      {
+        "name": "command",
+        "file": "cli.py",
+        "line": 413,
+        "complexity": 2,
+        "has_docstring": true,
+        "arg_count": 1
+      },
+      {
+        "name": "group",
+        "file": "cli.py",
+        "line": 429,
+        "complexity": 1,
+        "has_docstring": true,
+        "arg_count": 1
+      },
+      {
+        "name": "__init__",
+        "file": "cli.py",
+        "line": 563,
+        "complexity": 5,
+        "has_docstring": false,
+        "arg_count": 6
+      },
+      {
+        "name": "_load_plugin_commands",
+        "file": "cli.py",
+        "line": 600,
+        "complexity": 3,
+        "has_docstring": false,
+        "arg_count": 1
+      },
+      {
+        "name": "get_command",
+        "file": "cli.py",
+        "line": 609,
+        "complexity": 6,
+        "has_docstring": false,
+        "arg_count": 3
+      },
+      {
+        "name": "list_commands",
+        "file": "cli.py",
+        "line": 636,
+        "complexity": 4,
+        "has_docstring": false,
+        "arg_count": 2
+      },
+      {
+        "name": "make_context",
+        "file": "cli.py",
+        "line": 657,
+        "complexity": 3,
+        "has_docstring": false,
+        "arg_count": 4
+      },
+      {
+        "name": "parse_args",
+        "file": "cli.py",
+        "line": 678,
+        "complexity": 5,
+        "has_docstring": false,
+        "arg_count": 3
+      },
+      {
+        "name": "__init__",
+        "file": "cli.py",
+        "line": 788,
+        "complexity": 1,
+        "has_docstring": false,
+        "arg_count": 1
+      },
+      {
+        "name": "convert",
+        "file": "cli.py",
+        "line": 791,
+        "complexity": 9,
+        "has_docstring": false,
+        "arg_count": 4
+      },
+      {
+        "name": "convert",
+        "file": "cli.py",
+        "line": 873,
+        "complexity": 1,
+        "has_docstring": false,
+        "arg_count": 4
+      },
+      {
+        "name": "decorator",
+        "file": "cli.py",
+        "line": 422,
+        "complexity": 2,
+        "has_docstring": false,
+        "arg_count": 1
+      },
+      {
+        "name": "app",
+        "file": "cli.py",
+        "line": 963,
+        "complexity": 1,
+        "has_docstring": false,
+        "arg_count": 2
+      },
+      {
+        "name": "__init__",
+        "file": "config.py",
+        "line": 23,
+        "complexity": 1,
+        "has_docstring": false,
+        "arg_count": 3
+      },
+      {
+        "name": "__get__",
+        "file": "config.py",
+        "line": 30,
+        "complexity": 1,
+        "has_docstring": false,
+        "arg_count": 3
+      },
+      {
+        "name": "__get__",
+        "file": "config.py",
+        "line": 33,
+        "complexity": 1,
+        "has_docstring": false,
+        "arg_count": 3
+      },
+      {
+        "name": "__get__",
+        "file": "config.py",
+        "line": 35,
+        "complexity": 3,
+        "has_docstring": false,
+        "arg_count": 3
+      },
+      {
+        "name": "__set__",
+        "file": "config.py",
+        "line": 46,
+        "complexity": 1,
+        "has_docstring": false,
+        "arg_count": 3
+      },
+      {
+        "name": "__init__",
+        "file": "config.py",
+        "line": 94,
+        "complexity": 2,
+        "has_docstring": false,
+        "arg_count": 3
+      },
+      {
+        "name": "from_envvar",
+        "file": "config.py",
+        "line": 102,
+        "complexity": 3,
+        "has_docstring": true,
+        "arg_count": 3
+      },
+      {
+        "name": "from_prefixed_env",
+        "file": "config.py",
+        "line": 126,
+        "complexity": 8,
+        "has_docstring": true,
+        "arg_count": 2
+      },
+      {
+        "name": "from_pyfile",
+        "file": "config.py",
+        "line": 187,
+        "complexity": 5,
+        "has_docstring": true,
+        "arg_count": 3
+      },
+      {
+        "name": "from_object",
+        "file": "config.py",
+        "line": 218,
+        "complexity": 4,
+        "has_docstring": true,
+        "arg_count": 2
+      },
+      {
+        "name": "from_file",
+        "file": "config.py",
+        "line": 256,
+        "complexity": 5,
+        "has_docstring": true,
+        "arg_count": 5
+      },
+      {
+        "name": "from_mapping",
+        "file": "config.py",
+        "line": 304,
+        "complexity": 4,
+        "has_docstring": true,
+        "arg_count": 2
+      },
+      {
+        "name": "get_namespace",
+        "file": "config.py",
+        "line": 323,
+        "complexity": 5,
+        "has_docstring": true,
+        "arg_count": 4
+      },
+      {
+        "name": "__repr__",
+        "file": "config.py",
+        "line": 366,
+        "complexity": 1,
+        "has_docstring": false,
+        "arg_count": 1
+      },
+      {
+        "name": "after_this_request",
+        "file": "ctx.py",
+        "line": 117,
+        "complexity": 3,
+        "has_docstring": true,
+        "arg_count": 1
+      },
+      {
+        "name": "copy_current_request_context",
+        "file": "ctx.py",
+        "line": 153,
+        "complexity": 2,
+        "has_docstring": true,
+        "arg_count": 1
+      },
+      {
+        "name": "has_request_context",
+        "file": "ctx.py",
+        "line": 208,
+        "complexity": 2,
+        "has_docstring": true,
+        "arg_count": 0
+      },
+      {
+        "name": "has_app_context",
+        "file": "ctx.py",
+        "line": 234,
+        "complexity": 1,
+        "has_docstring": true,
+        "arg_count": 0
+      },
+      {
+        "name": "__getattr__",
+        "file": "ctx.py",
+        "line": 504,
+        "complexity": 2,
+        "has_docstring": false,
+        "arg_count": 1
+      },
+      {
+        "name": "__getattr__",
+        "file": "ctx.py",
+        "line": 52,
+        "complexity": 3,
+        "has_docstring": false,
+        "arg_count": 2
+      },
+      {
+        "name": "__setattr__",
+        "file": "ctx.py",
+        "line": 58,
+        "complexity": 1,
+        "has_docstring": false,
+        "arg_count": 3
+      },
+      {
+        "name": "__delattr__",
+        "file": "ctx.py",
+        "line": 61,
+        "complexity": 3,
+        "has_docstring": false,
+        "arg_count": 2
+      },
+      {
+        "name": "get",
+        "file": "ctx.py",
+        "line": 67,
+        "complexity": 1,
+        "has_docstring": true,
+        "arg_count": 3
+      },
+      {
+        "name": "pop",
+        "file": "ctx.py",
+        "line": 78,
+        "complexity": 2,
+        "has_docstring": true,
+        "arg_count": 3
+      },
+      {
+        "name": "setdefault",
+        "file": "ctx.py",
+        "line": 92,
+        "complexity": 1,
+        "has_docstring": true,
+        "arg_count": 3
+      },
+      {
+        "name": "__contains__",
+        "file": "ctx.py",
+        "line": 104,
+        "complexity": 1,
+        "has_docstring": false,
+        "arg_count": 2
+      },
+      {
+        "name": "__iter__",
+        "file": "ctx.py",
+        "line": 107,
+        "complexity": 1,
+        "has_docstring": false,
+        "arg_count": 1
+      },
+      {
+        "name": "__repr__",
+        "file": "ctx.py",
+        "line": 110,
+        "complexity": 2,
+        "has_docstring": false,
+        "arg_count": 1
+      },
+      {
+        "name": "wrapper",
+        "file": "ctx.py",
+        "line": 201,
+        "complexity": 1,
+        "has_docstring": false,
+        "arg_count": 0
+      },
+      {
+        "name": "__init__",
+        "file": "ctx.py",
+        "line": 299,
+        "complexity": 4,
+        "has_docstring": false,
+        "arg_count": 2
+      },
+      {
+        "name": "from_environ",
+        "file": "ctx.py",
+        "line": 339,
+        "complexity": 1,
+        "has_docstring": true,
+        "arg_count": 0
+      },
+      {
+        "name": "has_request",
+        "file": "ctx.py",
+        "line": 350,
+        "complexity": 1,
+        "has_docstring": true,
+        "arg_count": 1
+      },
+      {
+        "name": "copy",
+        "file": "ctx.py",
+        "line": 354,
+        "complexity": 1,
+        "has_docstring": true,
+        "arg_count": 1
+      },
+      {
+        "name": "request",
+        "file": "ctx.py",
+        "line": 370,
+        "complexity": 2,
+        "has_docstring": true,
+        "arg_count": 1
+      },
+      {
+        "name": "session",
+        "file": "ctx.py",
+        "line": 381,
+        "complexity": 4,
+        "has_docstring": true,
+        "arg_count": 1
+      },
+      {
+        "name": "match_request",
+        "file": "ctx.py",
+        "line": 398,
+        "complexity": 3,
+        "has_docstring": true,
+        "arg_count": 1
+      },
+      {
+        "name": "push",
+        "file": "ctx.py",
+        "line": 409,
+        "complexity": 4,
+        "has_docstring": true,
+        "arg_count": 1
+      },
+      {
+        "name": "pop",
+        "file": "ctx.py",
+        "line": 432,
+        "complexity": 8,
+        "has_docstring": true,
+        "arg_count": 2
+      },
+      {
+        "name": "__enter__",
+        "file": "ctx.py",
+        "line": 482,
+        "complexity": 1,
+        "has_docstring": false,
+        "arg_count": 1
+      },
+      {
+        "name": "__exit__",
+        "file": "ctx.py",
+        "line": 486,
+        "complexity": 1,
+        "has_docstring": false,
+        "arg_count": 4
+      },
+      {
+        "name": "__repr__",
+        "file": "ctx.py",
+        "line": 494,
+        "complexity": 2,
+        "has_docstring": false,
+        "arg_count": 1
+      },
+      {
+        "name": "attach_enctype_error_multidict",
+        "file": "debughelpers.py",
+        "line": 81,
+        "complexity": 4,
+        "has_docstring": true,
+        "arg_count": 1
+      },
+      {
+        "name": "_dump_loader_info",
+        "file": "debughelpers.py",
+        "line": 107,
+        "complexity": 7,
+        "has_docstring": false,
+        "arg_count": 1
+      },
+      {
+        "name": "explain_template_loading_attempts",
+        "file": "debughelpers.py",
+        "line": 124,
+        "complexity": 13,
+        "has_docstring": true,
+        "arg_count": 3
+      },
+      {
+        "name": "__init__",
+        "file": "debughelpers.py",
+        "line": 28,
+        "complexity": 2,
+        "has_docstring": false,
+        "arg_count": 3
+      },
+      {
+        "name": "__str__",
+        "file": "debughelpers.py",
+        "line": 46,
+        "complexity": 1,
+        "has_docstring": false,
+        "arg_count": 1
+      },
+      {
+        "name": "__init__",
+        "file": "debughelpers.py",
+        "line": 57,
+        "complexity": 2,
+        "has_docstring": false,
+        "arg_count": 2
+      },
+      {
+        "name": "__getitem__",
+        "file": "debughelpers.py",
+        "line": 91,
+        "complexity": 4,
+        "has_docstring": false,
+        "arg_count": 2
+      },
+      {
+        "name": "__getattr__",
+        "file": "globals.py",
+        "line": 65,
+        "complexity": 2,
+        "has_docstring": false,
+        "arg_count": 1
+      },
+      {
+        "name": "_get_current_object",
+        "file": "globals.py",
+        "line": 18,
+        "complexity": 1,
+        "has_docstring": false,
+        "arg_count": 1
+      },
+      {
+        "name": "get_debug_flag",
+        "file": "helpers.py",
+        "line": 27,
+        "complexity": 2,
+        "has_docstring": true,
+        "arg_count": 0
+      },
+      {
+        "name": "get_load_dotenv",
+        "file": "helpers.py",
+        "line": 35,
+        "complexity": 2,
+        "has_docstring": true,
+        "arg_count": 1
+      },
+      {
+        "name": "stream_with_context",
+        "file": "helpers.py",
+        "line": 51,
+        "complexity": 1,
+        "has_docstring": false,
+        "arg_count": 1
+      },
+      {
+        "name": "stream_with_context",
+        "file": "helpers.py",
+        "line": 57,
+        "complexity": 1,
+        "has_docstring": false,
+        "arg_count": 1
+      },
+      {
+        "name": "stream_with_context",
+        "file": "helpers.py",
+        "line": 62,
+        "complexity": 6,
+        "has_docstring": true,
+        "arg_count": 1
+      },
+      {
+        "name": "make_response",
+        "file": "helpers.py",
+        "line": 138,
+        "complexity": 3,
+        "has_docstring": true,
+        "arg_count": 0
+      },
+      {
+        "name": "url_for",
+        "file": "helpers.py",
+        "line": 187,
+        "complexity": 1,
+        "has_docstring": true,
+        "arg_count": 1
+      },
+      {
+        "name": "redirect",
+        "file": "helpers.py",
+        "line": 241,
+        "complexity": 2,
+        "has_docstring": true,
+        "arg_count": 3
+      },
+      {
+        "name": "abort",
+        "file": "helpers.py",
+        "line": 265,
+        "complexity": 2,
+        "has_docstring": true,
+        "arg_count": 1
+      },
+      {
+        "name": "get_template_attribute",
+        "file": "helpers.py",
+        "line": 288,
+        "complexity": 1,
+        "has_docstring": true,
+        "arg_count": 2
+      },
+      {
+        "name": "flash",
+        "file": "helpers.py",
+        "line": 310,
+        "complexity": 1,
+        "has_docstring": true,
+        "arg_count": 2
+      },
+      {
+        "name": "get_flashed_messages",
+        "file": "helpers.py",
+        "line": 344,
+        "complexity": 4,
+        "has_docstring": true,
+        "arg_count": 2
+      },
+      {
+        "name": "_prepare_send_file_kwargs",
+        "file": "helpers.py",
+        "line": 386,
+        "complexity": 2,
+        "has_docstring": false,
+        "arg_count": 0
+      },
+      {
+        "name": "send_file",
+        "file": "helpers.py",
+        "line": 401,
+        "complexity": 1,
+        "has_docstring": true,
+        "arg_count": 8
+      },
+      {
+        "name": "send_from_directory",
+        "file": "helpers.py",
+        "line": 527,
+        "complexity": 1,
+        "has_docstring": true,
+        "arg_count": 2
+      },
+      {
+        "name": "get_root_path",
+        "file": "helpers.py",
+        "line": 571,
+        "complexity": 10,
+        "has_docstring": true,
+        "arg_count": 1
+      },
+      {
+        "name": "_split_blueprint_path",
+        "file": "helpers.py",
+        "line": 629,
+        "complexity": 2,
+        "has_docstring": false,
+        "arg_count": 1
+      },
+      {
+        "name": "generator",
+        "file": "helpers.py",
+        "line": 113,
+        "complexity": 4,
+        "has_docstring": false,
+        "arg_count": 0
+      },
+      {
+        "name": "decorator",
+        "file": "helpers.py",
+        "line": 107,
+        "complexity": 1,
+        "has_docstring": false,
+        "arg_count": 0
+      },
+      {
+        "name": "wsgi_errors_stream",
+        "file": "logging.py",
+        "line": 16,
+        "complexity": 2,
+        "has_docstring": true,
+        "arg_count": 0
+      },
+      {
+        "name": "has_level_handler",
+        "file": "logging.py",
+        "line": 31,
+        "complexity": 4,
+        "has_docstring": true,
+        "arg_count": 1
+      },
+      {
+        "name": "create_logger",
+        "file": "logging.py",
+        "line": 58,
+        "complexity": 4,
+        "has_docstring": true,
+        "arg_count": 1
+      },
+      {
+        "name": "_lazy_sha1",
+        "file": "sessions.py",
+        "line": 290,
+        "complexity": 1,
+        "has_docstring": true,
+        "arg_count": 1
+      },
+      {
+        "name": "permanent",
+        "file": "sessions.py",
+        "line": 28,
+        "complexity": 1,
+        "has_docstring": true,
+        "arg_count": 1
+      },
+      {
+        "name": "permanent",
+        "file": "sessions.py",
+        "line": 33,
+        "complexity": 1,
+        "has_docstring": false,
+        "arg_count": 2
+      },
+      {
+        "name": "__init__",
+        "file": "sessions.py",
+        "line": 74,
+        "complexity": 1,
+        "has_docstring": false,
+        "arg_count": 2
+      },
+      {
+        "name": "__getitem__",
+        "file": "sessions.py",
+        "line": 84,
+        "complexity": 1,
+        "has_docstring": false,
+        "arg_count": 2
+      },
+      {
+        "name": "get",
+        "file": "sessions.py",
+        "line": 88,
+        "complexity": 1,
+        "has_docstring": false,
+        "arg_count": 3
+      },
+      {
+        "name": "setdefault",
+        "file": "sessions.py",
+        "line": 92,
+        "complexity": 1,
+        "has_docstring": false,
+        "arg_count": 3
+      },
+      {
+        "name": "_fail",
+        "file": "sessions.py",
+        "line": 103,
+        "complexity": 1,
+        "has_docstring": false,
+        "arg_count": 1
+      },
+      {
+        "name": "make_null_session",
+        "file": "sessions.py",
+        "line": 164,
+        "complexity": 1,
+        "has_docstring": true,
+        "arg_count": 2
+      },
+      {
+        "name": "is_null_session",
+        "file": "sessions.py",
+        "line": 176,
+        "complexity": 1,
+        "has_docstring": true,
+        "arg_count": 2
+      },
+      {
+        "name": "get_cookie_name",
+        "file": "sessions.py",
+        "line": 185,
+        "complexity": 1,
+        "has_docstring": true,
+        "arg_count": 2
+      },
+      {
+        "name": "get_cookie_domain",
+        "file": "sessions.py",
+        "line": 189,
+        "complexity": 1,
+        "has_docstring": true,
+        "arg_count": 2
+      },
+      {
+        "name": "get_cookie_path",
+        "file": "sessions.py",
+        "line": 201,
+        "complexity": 2,
+        "has_docstring": true,
+        "arg_count": 2
+      },
+      {
+        "name": "get_cookie_httponly",
+        "file": "sessions.py",
+        "line": 209,
+        "complexity": 1,
+        "has_docstring": true,
+        "arg_count": 2
+      },
+      {
+        "name": "get_cookie_secure",
+        "file": "sessions.py",
+        "line": 216,
+        "complexity": 1,
+        "has_docstring": true,
+        "arg_count": 2
+      },
+      {
+        "name": "get_cookie_samesite",
+        "file": "sessions.py",
+        "line": 222,
+        "complexity": 1,
+        "has_docstring": true,
+        "arg_count": 2
+      },
+      {
+        "name": "get_cookie_partitioned",
+        "file": "sessions.py",
+        "line": 229,
+        "complexity": 1,
+        "has_docstring": true,
+        "arg_count": 2
+      },
+      {
+        "name": "get_expiration_time",
+        "file": "sessions.py",
+        "line": 237,
+        "complexity": 2,
+        "has_docstring": true,
+        "arg_count": 3
+      },
+      {
+        "name": "should_set_cookie",
+        "file": "sessions.py",
+        "line": 247,
+        "complexity": 3,
+        "has_docstring": true,
+        "arg_count": 3
+      },
+      {
+        "name": "open_session",
+        "file": "sessions.py",
+        "line": 263,
+        "complexity": 1,
+        "has_docstring": true,
+        "arg_count": 3
+      },
+      {
+        "name": "save_session",
+        "file": "sessions.py",
+        "line": 277,
+        "complexity": 1,
+        "has_docstring": true,
+        "arg_count": 4
+      },
+      {
+        "name": "get_signing_serializer",
+        "file": "sessions.py",
+        "line": 317,
+        "complexity": 3,
+        "has_docstring": false,
+        "arg_count": 2
+      },
+      {
+        "name": "open_session",
+        "file": "sessions.py",
+        "line": 337,
+        "complexity": 5,
+        "has_docstring": false,
+        "arg_count": 3
+      },
+      {
+        "name": "save_session",
+        "file": "sessions.py",
+        "line": 351,
+        "complexity": 5,
+        "has_docstring": false,
+        "arg_count": 4
+      },
+      {
+        "name": "on_update",
+        "file": "sessions.py",
+        "line": 78,
+        "complexity": 1,
+        "has_docstring": false,
+        "arg_count": 1
+      },
+      {
+        "name": "_default_template_ctx_processor",
+        "file": "templating.py",
+        "line": 21,
+        "complexity": 2,
+        "has_docstring": true,
+        "arg_count": 0
+      },
+      {
+        "name": "_render",
+        "file": "templating.py",
+        "line": 122,
+        "complexity": 1,
+        "has_docstring": false,
+        "arg_count": 3
+      },
+      {
+        "name": "render_template",
+        "file": "templating.py",
+        "line": 135,
+        "complexity": 1,
+        "has_docstring": true,
+        "arg_count": 1
+      },
+      {
+        "name": "render_template_string",
+        "file": "templating.py",
+        "line": 150,
+        "complexity": 1,
+        "has_docstring": true,
+        "arg_count": 1
+      },
+      {
+        "name": "_stream",
+        "file": "templating.py",
+        "line": 162,
+        "complexity": 1,
+        "has_docstring": false,
+        "arg_count": 3
+      },
+      {
+        "name": "stream_template",
+        "file": "templating.py",
+        "line": 180,
+        "complexity": 1,
+        "has_docstring": true,
+        "arg_count": 1
+      },
+      {
+        "name": "stream_template_string",
+        "file": "templating.py",
+        "line": 199,
+        "complexity": 1,
+        "has_docstring": true,
+        "arg_count": 1
+      },
+      {
+        "name": "__init__",
+        "file": "templating.py",
+        "line": 41,
+        "complexity": 2,
+        "has_docstring": false,
+        "arg_count": 2
+      },
+      {
+        "name": "__init__",
+        "file": "templating.py",
+        "line": 53,
+        "complexity": 1,
+        "has_docstring": false,
+        "arg_count": 2
+      },
+      {
+        "name": "get_source",
+        "file": "templating.py",
+        "line": 56,
+        "complexity": 2,
+        "has_docstring": false,
+        "arg_count": 3
+      },
+      {
+        "name": "_get_source_explained",
+        "file": "templating.py",
+        "line": 63,
+        "complexity": 6,
+        "has_docstring": false,
+        "arg_count": 3
+      },
+      {
+        "name": "_get_source_fast",
+        "file": "templating.py",
+        "line": 87,
+        "complexity": 4,
+        "has_docstring": false,
+        "arg_count": 3
+      },
+      {
+        "name": "_iter_loaders",
+        "file": "templating.py",
+        "line": 97,
+        "complexity": 4,
+        "has_docstring": false,
+        "arg_count": 2
+      },
+      {
+        "name": "list_templates",
+        "file": "templating.py",
+        "line": 107,
+        "complexity": 5,
+        "has_docstring": false,
+        "arg_count": 1
+      },
+      {
+        "name": "generate",
+        "file": "templating.py",
+        "line": 171,
+        "complexity": 1,
+        "has_docstring": false,
+        "arg_count": 0
+      },
+      {
+        "name": "dispatch_request",
+        "file": "views.py",
+        "line": 78,
+        "complexity": 1,
+        "has_docstring": true,
+        "arg_count": 1
+      },
+      {
+        "name": "as_view",
+        "file": "views.py",
+        "line": 86,
+        "complexity": 4,
+        "has_docstring": true,
+        "arg_count": 2
+      },
+      {
+        "name": "__init_subclass__",
+        "file": "views.py",
+        "line": 165,
+        "complexity": 7,
+        "has_docstring": false,
+        "arg_count": 1
+      },
+      {
+        "name": "dispatch_request",
+        "file": "views.py",
+        "line": 182,
+        "complexity": 3,
+        "has_docstring": false,
+        "arg_count": 1
+      },
+      {
+        "name": "view",
+        "file": "views.py",
+        "line": 106,
+        "complexity": 1,
+        "has_docstring": false,
+        "arg_count": 0
+      },
+      {
+        "name": "view",
+        "file": "views.py",
+        "line": 115,
+        "complexity": 1,
+        "has_docstring": false,
+        "arg_count": 0
+      },
+      {
+        "name": "max_content_length",
+        "file": "wrappers.py",
+        "line": 60,
+        "complexity": 3,
+        "has_docstring": true,
+        "arg_count": 1
+      },
+      {
+        "name": "max_content_length",
+        "file": "wrappers.py",
+        "line": 89,
+        "complexity": 1,
+        "has_docstring": false,
+        "arg_count": 2
+      },
+      {
+        "name": "max_form_memory_size",
+        "file": "wrappers.py",
+        "line": 93,
+        "complexity": 3,
+        "has_docstring": true,
+        "arg_count": 1
+      },
+      {
+        "name": "max_form_memory_size",
+        "file": "wrappers.py",
+        "line": 116,
+        "complexity": 1,
+        "has_docstring": false,
+        "arg_count": 2
+      },
+      {
+        "name": "max_form_parts",
+        "file": "wrappers.py",
+        "line": 120,
+        "complexity": 3,
+        "has_docstring": true,
+        "arg_count": 1
+      },
+      {
+        "name": "max_form_parts",
+        "file": "wrappers.py",
+        "line": 143,
+        "complexity": 1,
+        "has_docstring": false,
+        "arg_count": 2
+      },
+      {
+        "name": "endpoint",
+        "file": "wrappers.py",
+        "line": 147,
+        "complexity": 2,
+        "has_docstring": true,
+        "arg_count": 1
+      },
+      {
+        "name": "blueprint",
+        "file": "wrappers.py",
+        "line": 162,
+        "complexity": 3,
+        "has_docstring": true,
+        "arg_count": 1
+      },
+      {
+        "name": "blueprints",
+        "file": "wrappers.py",
+        "line": 181,
+        "complexity": 2,
+        "has_docstring": true,
+        "arg_count": 1
+      },
+      {
+        "name": "_load_form_data",
+        "file": "wrappers.py",
+        "line": 197,
+        "complexity": 5,
+        "has_docstring": false,
+        "arg_count": 1
+      },
+      {
+        "name": "on_json_loading_failed",
+        "file": "wrappers.py",
+        "line": 212,
+        "complexity": 5,
+        "has_docstring": false,
+        "arg_count": 2
+      },
+      {
+        "name": "max_cookie_size",
+        "file": "wrappers.py",
+        "line": 247,
+        "complexity": 2,
+        "has_docstring": true,
+        "arg_count": 1
+      }
+    ],
+    "overall": {
+      "function_count": 210,
+      "total_complexity": 667,
+      "avg_complexity": 3.176190476190476,
+      "max_complexity": 17,
+      "high_complexity_funcs": [
+        {
+          "name": "run",
+          "file": "app.py",
+          "line": 631,
+          "complexity": 13,
+          "has_docstring": true,
+          "arg_count": 5
+        },
+        {
+          "name": "url_for",
+          "file": "app.py",
+          "line": 1090,
+          "complexity": 14,
+          "has_docstring": true,
+          "arg_count": 1
+        },
+        {
+          "name": "make_response",
+          "file": "app.py",
+          "line": 1212,
+          "complexity": 17,
+          "has_docstring": true,
+          "arg_count": 2
+        },
+        {
+          "name": "find_best_app",
+          "file": "cli.py",
+          "line": 41,
+          "complexity": 11,
+          "has_docstring": true,
+          "arg_count": 1
+        },
+        {
+          "name": "find_app_by_string",
+          "file": "cli.py",
+          "line": 120,
+          "complexity": 15,
+          "has_docstring": true,
+          "arg_count": 2
+        },
+        {
+          "name": "load_dotenv",
+          "file": "cli.py",
+          "line": 698,
+          "complexity": 14,
+          "has_docstring": true,
+          "arg_count": 2
+        },
+        {
+          "name": "explain_template_loading_attempts",
+          "file": "debughelpers.py",
+          "line": 124,
+          "complexity": 13,
+          "has_docstring": true,
+          "arg_count": 3
+        }
+      ],
+      "functions_without_doc": 90
+    }
+  },
+  "structure": {
+    "has_init_files": true,
+    "has_main_entry": true,
+    "has_config_files": true,
+    "has_test_structure": false,
+    "directory_depth": 0
+  },
+  "dependencies": {
+    "external_imports": "{'ctx', 'typing_extensions', 'hashlib', 'werkzeug', 'sansio', 'importlib', 'readline', 'config', 'platform', 'urllib', 'app', 'warnings', 'weakref', 'inspect', 'cli', 'code', 'jinja2', 'rlcompleter', 'signals', '__future__', 'debughelpers', 'itsdangerous', 'operator', 'blinker', 'ssl', 'click', '_typeshed', 'contextvars', 'globals', 'testing', 'types', 'blueprints', 'dotenv', 'cryptography', 'errno', 'wrappers', 'sessions', 'templating', 'traceback', 'helpers', 'asgiref', 'ast'}",
+    "standard_lib_imports": "{'collections', 'logging', 'sys', 'typing', 'json', 'os', 'functools', 'datetime', 'itertools', 're'}",
+    "import_counts": {
+      "__future__": 15,
+      "collections": 5,
+      "inspect": 3,
+      "os": 5,
+      "sys": 4,
+      "typing": 15,
+      "weakref": 1,
+      "datetime": 5,
+      "functools": 5,
+      "itertools": 1,
+      "types": 4,
+      "urllib": 1,
+      "click": 3,
+      "werkzeug": 35,
+      "ctx": 8,
+      "globals": 23,
+      "helpers": 19,
+      "sansio": 10,
+      "sessions": 4,
+      "signals": 20,
+      "templating": 5,
+      "wrappers": 11,
+      "_typeshed": 7,
+      "testing": 5,
+      "warnings": 3,
+      "debughelpers": 3,
+      "asgiref": 1,
+      "cli": 2,
+      "ast": 1,
+      "importlib": 2,
+      "platform": 1,
+      "re": 1,
+      "traceback": 1,
+      "operator": 1,
+      "ssl": 3,
+      "app": 5,
+      "code": 1,
+      "dotenv": 2,
+      "readline": 1,
+      "rlcompleter": 1,
+      "cryptography": 1,
+      "errno": 1,
+      "json": 3,
+      "typing_extensions": 3,
+      "contextvars": 2,
+      "jinja2": 5,
+      "blueprints": 2,
+      "logging": 1,
+      "hashlib": 1,
+      "itsdangerous": 2,
+      "blinker": 1,
+      "config": 1
+    },
+    "module_imports": {
+      "app.py": [
+        "__future__",
+        "collections",
+        "inspect",
+        "os",
+        "sys",
+        "typing",
+        "weakref",
+        "datetime",
+        "functools",
+        "inspect",
+        "itertools",
+        "types",
+        "urllib",
+        "click",
+        "werkzeug",
+        "werkzeug",
+        "werkzeug",
+        "werkzeug",
+        "werkzeug",
+        "werkzeug",
+        "werkzeug",
+        "werkzeug",
+        "werkzeug",
+        "werkzeug",
+        "werkzeug",
+        "werkzeug",
+        "werkzeug",
+        "ctx",
+        "globals",
+        "globals",
+        "globals",
+        "globals",
+        "globals",
+        "helpers",
+        "helpers",
+        "helpers",
+        "helpers",
+        "sansio",
+        "sessions",
+        "sessions",
+        "signals",
+        "signals",
+        "signals",
+        "signals",
+        "signals",
+        "templating",
+        "wrappers",
+        "wrappers",
+        "_typeshed",
+        "_typeshed",
+        "testing",
+        "testing",
+        "typing",
+        "warnings",
+        "debughelpers",
+        "werkzeug",
+        "testing",
+        "testing",
+        "testing",
+        "asgiref"
+      ],
+      "blueprints.py": [
+        "__future__",
+        "os",
+        "typing",
+        "datetime",
+        "cli",
+        "globals",
+        "helpers",
+        "sansio",
+        "sansio",
+        "sansio",
+        "wrappers"
+      ],
+      "cli.py": [
+        "__future__",
+        "ast",
+        "collections",
+        "importlib",
+        "inspect",
+        "os",
+        "platform",
+        "re",
+        "sys",
+        "traceback",
+        "typing",
+        "functools",
+        "operator",
+        "types",
+        "click",
+        "click",
+        "werkzeug",
+        "werkzeug",
+        "werkzeug",
+        "globals",
+        "helpers",
+        "helpers",
+        "ssl",
+        "_typeshed",
+        "_typeshed",
+        "_typeshed",
+        "app",
+        "code",
+        "dotenv",
+        "dotenv",
+        "ssl",
+        "ssl",
+        "readline",
+        "rlcompleter",
+        "cryptography"
+      ],
+      "config.py": [
+        "__future__",
+        "errno",
+        "json",
+        "os",
+        "types",
+        "typing",
+        "werkzeug",
+        "typing_extensions",
+        "sansio"
+      ],
+      "ctx.py": [
+        "__future__",
+        "contextvars",
+        "typing",
+        "functools",
+        "types",
+        "werkzeug",
+        "werkzeug",
+        "globals",
+        "signals",
+        "signals",
+        "typing_extensions",
+        "_typeshed",
+        "app",
+        "sessions",
+        "wrappers",
+        "warnings"
+      ],
+      "debughelpers.py": [
+        "__future__",
+        "typing",
+        "jinja2",
+        "werkzeug",
+        "blueprints",
+        "globals",
+        "sansio",
+        "sansio",
+        "wrappers"
+      ],
+      "globals.py": [
+        "__future__",
+        "typing",
+        "contextvars",
+        "werkzeug",
+        "app",
+        "ctx",
+        "ctx",
+        "sessions",
+        "wrappers",
+        "warnings"
+      ],
+      "helpers.py": [
+        "__future__",
+        "importlib",
+        "os",
+        "sys",
+        "typing",
+        "datetime",
+        "functools",
+        "functools",
+        "werkzeug",
+        "werkzeug",
+        "werkzeug",
+        "werkzeug",
+        "globals",
+        "globals",
+        "globals",
+        "globals",
+        "globals",
+        "signals",
+        "wrappers"
+      ],
+      "logging.py": [
+        "__future__",
+        "logging",
+        "sys",
+        "typing",
+        "werkzeug",
+        "globals",
+        "sansio"
+      ],
+      "sessions.py": [
+        "__future__",
+        "collections",
+        "hashlib",
+        "typing",
+        "collections",
+        "datetime",
+        "datetime",
+        "itsdangerous",
+        "itsdangerous",
+        "werkzeug",
+        "json",
+        "typing_extensions",
+        "app",
+        "wrappers",
+        "wrappers"
+      ],
+      "signals.py": [
+        "__future__",
+        "blinker"
+      ],
+      "templating.py": [
+        "__future__",
+        "typing",
+        "jinja2",
+        "jinja2",
+        "jinja2",
+        "jinja2",
+        "ctx",
+        "globals",
+        "helpers",
+        "signals",
+        "signals",
+        "sansio",
+        "sansio",
+        "debughelpers"
+      ],
+      "typing.py": [
+        "__future__",
+        "collections",
+        "typing",
+        "_typeshed",
+        "werkzeug",
+        "werkzeug"
+      ],
+      "views.py": [
+        "__future__",
+        "typing",
+        "globals",
+        "globals"
+      ],
+      "wrappers.py": [
+        "__future__",
+        "typing",
+        "werkzeug",
+        "werkzeug",
+        "werkzeug",
+        "werkzeug",
+        "globals",
+        "helpers",
+        "werkzeug",
+        "debughelpers"
+      ],
+      "__init__.py": [
+        "app",
+        "blueprints",
+        "config",
+        "ctx",
+        "ctx",
+        "ctx",
+        "ctx",
+        "globals",
+        "globals",
+        "globals",
+        "globals",
+        "helpers",
+        "helpers",
+        "helpers",
+        "helpers",
+        "helpers",
+        "helpers",
+        "helpers",
+        "helpers",
+        "helpers",
+        "helpers",
+        "json",
+        "signals",
+        "signals",
+        "signals",
+        "signals",
+        "signals",
+        "signals",
+        "signals",
+        "signals",
+        "signals",
+        "signals",
+        "templating",
+        "templating",
+        "templating",
+        "templating",
+        "wrappers",
+        "wrappers"
+      ],
+      "__main__.py": [
+        "cli"
+      ]
+    },
+    "categorized": {
+      "数据分析库": [],
+      "Web框架": [],
+      "其他": [
+        "ctx",
+        "typing_extensions",
+        "hashlib",
+        "werkzeug",
+        "sansio",
+        "importlib",
+        "readline",
+        "config",
+        "platform",
+        "urllib",
+        "app",
+        "warnings",
+        "weakref",
+        "inspect",
+        "cli",
+        "code",
+        "jinja2",
+        "rlcompleter",
+        "signals",
+        "__future__",
+        "debughelpers",
+        "itsdangerous",
+        "operator",
+        "blinker",
+        "ssl",
+        "click",
+        "_typeshed",
+        "contextvars",
+        "globals",
+        "testing",
+        "types",
+        "blueprints",
+        "dotenv",
+        "cryptography",
+        "errno",
+        "wrappers",
+        "sessions",
+        "templating",
+        "traceback",
+        "helpers",
+        "asgiref",
+        "ast"
+      ]
+    }
+  },
+  "summary": {
+    "python_file_count": 17,
+    "total_file_count": 17,
+    "function_count": 210,
+    "avg_complexity": 3.176190476190476,
+    "max_complexity": 17,
+    "high_complexity_count": 7,
+    "doc_coverage": 57.14285714285714,
+    "has_main_entry": true,
+    "has_tests": false,
+    "has_config": true,
+    "directory_depth": 0,
+    "external_deps_count": 42
+  }
+}

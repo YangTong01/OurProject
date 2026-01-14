@@ -1,0 +1,790 @@
+{
+  "info": {
+    "name": "代码演化分析",
+    "description": "负责代码结构、测试覆盖、文件类型演化分析",
+    "include_patterns": [
+      "code_analyzer.py",
+      "create_final_fix.py",
+      "fix_git_date.py",
+      "git_analyzer.py",
+      "test_analyzer.py",
+      "utils.py",
+      "visualization.py",
+      "basic_analysis.py",
+      "main.py",
+      "src/",
+      "data/",
+      "figures/",
+      "reports/"
+    ],
+    "exclude_patterns": [
+      "flask/",
+      "__pycache__/",
+      "venv/",
+      ".git/"
+    ]
+  },
+  "file_analysis": {
+    "total_files": 31,
+    "included_files": [
+      "basic_analysis.py",
+      "main.py",
+      "data/basic/basic_commit_history.csv",
+      "data/processed/code_structure_evolution.csv",
+      "data/processed/commit_history.csv",
+      "data/processed/filetype_evolution.csv",
+      "data/processed/test_coverage_evolution.csv",
+      "figures/author_heatmap.png",
+      "figures/code_growth.png",
+      "figures/commit_activity.png",
+      "figures/filetype_evolution.png",
+      "figures/structure_changes.png",
+      "figures/test_coverage_trend.png",
+      "figures/basic/commit_activity.png",
+      "figures/basic/commit_types.png",
+      "figures/basic/top_contributors.png",
+      "reports/analysis_summary.txt",
+      "reports/basic/basic_analysis_report.txt",
+      "src/code_analyzer.py",
+      "src/create_final_fix.py",
+      "src/fix_git_date.py",
+      "src/git_analyzer.py",
+      "src/test_analyzer.py",
+      "src/utils.py",
+      "src/visualization.py"
+    ],
+    "excluded_files": [
+      "config.yaml",
+      "requirements.txt",
+      "src/__pycache__/code_analyzer.cpython-39.pyc",
+      "src/__pycache__/git_analyzer.cpython-39.pyc",
+      "src/__pycache__/test_analyzer.cpython-39.pyc",
+      "src/__pycache__/visualization.cpython-39.pyc"
+    ],
+    "python_files": [
+      "basic_analysis.py",
+      "main.py",
+      "src/code_analyzer.py",
+      "src/create_final_fix.py",
+      "src/fix_git_date.py",
+      "src/git_analyzer.py",
+      "src/test_analyzer.py",
+      "src/utils.py",
+      "src/visualization.py"
+    ],
+    "other_files": [
+      "data/basic/basic_commit_history.csv",
+      "data/processed/code_structure_evolution.csv",
+      "data/processed/commit_history.csv",
+      "data/processed/filetype_evolution.csv",
+      "data/processed/test_coverage_evolution.csv",
+      "figures/author_heatmap.png",
+      "figures/code_growth.png",
+      "figures/commit_activity.png",
+      "figures/filetype_evolution.png",
+      "figures/structure_changes.png",
+      "figures/test_coverage_trend.png",
+      "figures/basic/commit_activity.png",
+      "figures/basic/commit_types.png",
+      "figures/basic/top_contributors.png",
+      "reports/analysis_summary.txt",
+      "reports/basic/basic_analysis_report.txt"
+    ],
+    "file_categories": {
+      "核心代码": [
+        "basic_analysis.py",
+        "src/code_analyzer.py",
+        "src/create_final_fix.py",
+        "src/fix_git_date.py",
+        "src/git_analyzer.py"
+      ],
+      "入口文件": [
+        "main.py"
+      ],
+      "测试文件": [
+        "src/test_analyzer.py"
+      ],
+      "工具函数": [
+        "src/utils.py"
+      ],
+      "可视化": [
+        "src/visualization.py"
+      ]
+    }
+  },
+  "complexity": {
+    "functions": [
+      {
+        "name": "load_config",
+        "file": "basic_analysis.py",
+        "line": 15,
+        "complexity": 1,
+        "has_docstring": true,
+        "arg_count": 1
+      },
+      {
+        "name": "run_basic_analysis",
+        "file": "basic_analysis.py",
+        "line": 21,
+        "complexity": 5,
+        "has_docstring": true,
+        "arg_count": 1
+      },
+      {
+        "name": "main",
+        "file": "basic_analysis.py",
+        "line": 116,
+        "complexity": 1,
+        "has_docstring": false,
+        "arg_count": 0
+      },
+      {
+        "name": "load_config",
+        "file": "main.py",
+        "line": 18,
+        "complexity": 1,
+        "has_docstring": true,
+        "arg_count": 1
+      },
+      {
+        "name": "clone_flask_repo",
+        "file": "main.py",
+        "line": 24,
+        "complexity": 2,
+        "has_docstring": true,
+        "arg_count": 1
+      },
+      {
+        "name": "analyze_code_evolution",
+        "file": "main.py",
+        "line": 41,
+        "complexity": 1,
+        "has_docstring": true,
+        "arg_count": 1
+      },
+      {
+        "name": "save_results",
+        "file": "main.py",
+        "line": 86,
+        "complexity": 3,
+        "has_docstring": true,
+        "arg_count": 4
+      },
+      {
+        "name": "generate_summary_report",
+        "file": "main.py",
+        "line": 104,
+        "complexity": 18,
+        "has_docstring": true,
+        "arg_count": 3
+      },
+      {
+        "name": "main",
+        "file": "main.py",
+        "line": 193,
+        "complexity": 2,
+        "has_docstring": false,
+        "arg_count": 0
+      },
+      {
+        "name": "__init__",
+        "file": "src/code_analyzer.py",
+        "line": 16,
+        "complexity": 1,
+        "has_docstring": false,
+        "arg_count": 2
+      },
+      {
+        "name": "analyze_structure_evolution",
+        "file": "src/code_analyzer.py",
+        "line": 20,
+        "complexity": 4,
+        "has_docstring": true,
+        "arg_count": 3
+      },
+      {
+        "name": "analyze_filetype_evolution",
+        "file": "src/code_analyzer.py",
+        "line": 49,
+        "complexity": 4,
+        "has_docstring": true,
+        "arg_count": 2
+      },
+      {
+        "name": "_create_analysis_timeline",
+        "file": "src/code_analyzer.py",
+        "line": 79,
+        "complexity": 2,
+        "has_docstring": true,
+        "arg_count": 3
+      },
+      {
+        "name": "_get_repo_at_commit",
+        "file": "src/code_analyzer.py",
+        "line": 92,
+        "complexity": 1,
+        "has_docstring": true,
+        "arg_count": 2
+      },
+      {
+        "name": "_analyze_code_snapshot",
+        "file": "src/code_analyzer.py",
+        "line": 106,
+        "complexity": 10,
+        "has_docstring": true,
+        "arg_count": 3
+      },
+      {
+        "name": "_categorize_file",
+        "file": "src/code_analyzer.py",
+        "line": 158,
+        "complexity": 9,
+        "has_docstring": true,
+        "arg_count": 2
+      },
+      {
+        "name": "_count_lines",
+        "file": "src/code_analyzer.py",
+        "line": 187,
+        "complexity": 3,
+        "has_docstring": true,
+        "arg_count": 2
+      },
+      {
+        "name": "_count_filetypes",
+        "file": "src/code_analyzer.py",
+        "line": 195,
+        "complexity": 4,
+        "has_docstring": true,
+        "arg_count": 2
+      },
+      {
+        "name": "analyze_directory_structure",
+        "file": "src/code_analyzer.py",
+        "line": 208,
+        "complexity": 4,
+        "has_docstring": true,
+        "arg_count": 2
+      },
+      {
+        "name": "_analyze_directory_hierarchy",
+        "file": "src/code_analyzer.py",
+        "line": 232,
+        "complexity": 4,
+        "has_docstring": true,
+        "arg_count": 2
+      },
+      {
+        "name": "__init__",
+        "file": "src/git_analyzer.py",
+        "line": 17,
+        "complexity": 3,
+        "has_docstring": true,
+        "arg_count": 2
+      },
+      {
+        "name": "_categorize_commit",
+        "file": "src/git_analyzer.py",
+        "line": 33,
+        "complexity": 6,
+        "has_docstring": true,
+        "arg_count": 2
+      },
+      {
+        "name": "_safe_datetime_conversion",
+        "file": "src/git_analyzer.py",
+        "line": 69,
+        "complexity": 11,
+        "has_docstring": true,
+        "arg_count": 2
+      },
+      {
+        "name": "extract_commit_history",
+        "file": "src/git_analyzer.py",
+        "line": 127,
+        "complexity": 29,
+        "has_docstring": true,
+        "arg_count": 2
+      },
+      {
+        "name": "get_commit_frequency",
+        "file": "src/git_analyzer.py",
+        "line": 284,
+        "complexity": 5,
+        "has_docstring": true,
+        "arg_count": 3
+      },
+      {
+        "name": "analyze_authors_contribution",
+        "file": "src/git_analyzer.py",
+        "line": 307,
+        "complexity": 6,
+        "has_docstring": true,
+        "arg_count": 2
+      },
+      {
+        "name": "extract_file_history",
+        "file": "src/git_analyzer.py",
+        "line": 358,
+        "complexity": 19,
+        "has_docstring": true,
+        "arg_count": 2
+      },
+      {
+        "name": "_get_change_type",
+        "file": "src/git_analyzer.py",
+        "line": 451,
+        "complexity": 6,
+        "has_docstring": true,
+        "arg_count": 2
+      },
+      {
+        "name": "analyze_commit_size_distribution",
+        "file": "src/git_analyzer.py",
+        "line": 472,
+        "complexity": 8,
+        "has_docstring": true,
+        "arg_count": 2
+      },
+      {
+        "name": "analyze_temporal_patterns",
+        "file": "src/git_analyzer.py",
+        "line": 540,
+        "complexity": 7,
+        "has_docstring": true,
+        "arg_count": 2
+      },
+      {
+        "name": "__init__",
+        "file": "src/test_analyzer.py",
+        "line": 16,
+        "complexity": 1,
+        "has_docstring": false,
+        "arg_count": 2
+      },
+      {
+        "name": "analyze_test_coverage",
+        "file": "src/test_analyzer.py",
+        "line": 20,
+        "complexity": 5,
+        "has_docstring": true,
+        "arg_count": 2
+      },
+      {
+        "name": "_analyze_test_at_current",
+        "file": "src/test_analyzer.py",
+        "line": 45,
+        "complexity": 3,
+        "has_docstring": true,
+        "arg_count": 2
+      },
+      {
+        "name": "_count_test_files",
+        "file": "src/test_analyzer.py",
+        "line": 78,
+        "complexity": 7,
+        "has_docstring": true,
+        "arg_count": 2
+      },
+      {
+        "name": "_count_source_files",
+        "file": "src/test_analyzer.py",
+        "line": 104,
+        "complexity": 8,
+        "has_docstring": true,
+        "arg_count": 2
+      },
+      {
+        "name": "_is_test_file",
+        "file": "src/test_analyzer.py",
+        "line": 130,
+        "complexity": 6,
+        "has_docstring": true,
+        "arg_count": 2
+      },
+      {
+        "name": "_analyze_test_quality",
+        "file": "src/test_analyzer.py",
+        "line": 145,
+        "complexity": 9,
+        "has_docstring": true,
+        "arg_count": 2
+      },
+      {
+        "name": "setup_logging",
+        "file": "src/utils.py",
+        "line": 15,
+        "complexity": 1,
+        "has_docstring": true,
+        "arg_count": 1
+      },
+      {
+        "name": "save_pickle",
+        "file": "src/utils.py",
+        "line": 27,
+        "complexity": 1,
+        "has_docstring": true,
+        "arg_count": 2
+      },
+      {
+        "name": "load_pickle",
+        "file": "src/utils.py",
+        "line": 32,
+        "complexity": 1,
+        "has_docstring": true,
+        "arg_count": 1
+      },
+      {
+        "name": "save_json",
+        "file": "src/utils.py",
+        "line": 37,
+        "complexity": 1,
+        "has_docstring": true,
+        "arg_count": 3
+      },
+      {
+        "name": "load_json",
+        "file": "src/utils.py",
+        "line": 42,
+        "complexity": 1,
+        "has_docstring": true,
+        "arg_count": 1
+      },
+      {
+        "name": "calculate_growth_rate",
+        "file": "src/utils.py",
+        "line": 47,
+        "complexity": 2,
+        "has_docstring": true,
+        "arg_count": 1
+      },
+      {
+        "name": "detect_outliers",
+        "file": "src/utils.py",
+        "line": 54,
+        "complexity": 1,
+        "has_docstring": true,
+        "arg_count": 2
+      },
+      {
+        "name": "time_series_smoothing",
+        "file": "src/utils.py",
+        "line": 62,
+        "complexity": 1,
+        "has_docstring": true,
+        "arg_count": 2
+      },
+      {
+        "name": "format_bytes",
+        "file": "src/utils.py",
+        "line": 66,
+        "complexity": 3,
+        "has_docstring": true,
+        "arg_count": 1
+      },
+      {
+        "name": "ensure_directory",
+        "file": "src/utils.py",
+        "line": 74,
+        "complexity": 1,
+        "has_docstring": true,
+        "arg_count": 1
+      },
+      {
+        "name": "calculate_complexity_metrics",
+        "file": "src/utils.py",
+        "line": 79,
+        "complexity": 2,
+        "has_docstring": true,
+        "arg_count": 1
+      },
+      {
+        "name": "__init__",
+        "file": "src/visualization.py",
+        "line": 20,
+        "complexity": 1,
+        "has_docstring": false,
+        "arg_count": 2
+      },
+      {
+        "name": "generate_all_visualizations",
+        "file": "src/visualization.py",
+        "line": 29,
+        "complexity": 3,
+        "has_docstring": true,
+        "arg_count": 5
+      },
+      {
+        "name": "plot_commit_activity",
+        "file": "src/visualization.py",
+        "line": 55,
+        "complexity": 7,
+        "has_docstring": true,
+        "arg_count": 2
+      },
+      {
+        "name": "plot_code_growth",
+        "file": "src/visualization.py",
+        "line": 103,
+        "complexity": 15,
+        "has_docstring": true,
+        "arg_count": 2
+      },
+      {
+        "name": "plot_filetype_evolution",
+        "file": "src/visualization.py",
+        "line": 171,
+        "complexity": 5,
+        "has_docstring": true,
+        "arg_count": 2
+      },
+      {
+        "name": "plot_test_coverage_trend",
+        "file": "src/visualization.py",
+        "line": 211,
+        "complexity": 13,
+        "has_docstring": true,
+        "arg_count": 2
+      },
+      {
+        "name": "plot_structure_changes",
+        "file": "src/visualization.py",
+        "line": 270,
+        "complexity": 14,
+        "has_docstring": true,
+        "arg_count": 2
+      },
+      {
+        "name": "plot_author_heatmap",
+        "file": "src/visualization.py",
+        "line": 328,
+        "complexity": 6,
+        "has_docstring": true,
+        "arg_count": 2
+      }
+    ],
+    "overall": {
+      "function_count": 56,
+      "total_complexity": 298,
+      "avg_complexity": 5.321428571428571,
+      "max_complexity": 29,
+      "high_complexity_funcs": [
+        {
+          "name": "generate_summary_report",
+          "file": "main.py",
+          "line": 104,
+          "complexity": 18,
+          "has_docstring": true,
+          "arg_count": 3
+        },
+        {
+          "name": "_safe_datetime_conversion",
+          "file": "src/git_analyzer.py",
+          "line": 69,
+          "complexity": 11,
+          "has_docstring": true,
+          "arg_count": 2
+        },
+        {
+          "name": "extract_commit_history",
+          "file": "src/git_analyzer.py",
+          "line": 127,
+          "complexity": 29,
+          "has_docstring": true,
+          "arg_count": 2
+        },
+        {
+          "name": "extract_file_history",
+          "file": "src/git_analyzer.py",
+          "line": 358,
+          "complexity": 19,
+          "has_docstring": true,
+          "arg_count": 2
+        },
+        {
+          "name": "plot_code_growth",
+          "file": "src/visualization.py",
+          "line": 103,
+          "complexity": 15,
+          "has_docstring": true,
+          "arg_count": 2
+        },
+        {
+          "name": "plot_test_coverage_trend",
+          "file": "src/visualization.py",
+          "line": 211,
+          "complexity": 13,
+          "has_docstring": true,
+          "arg_count": 2
+        },
+        {
+          "name": "plot_structure_changes",
+          "file": "src/visualization.py",
+          "line": 270,
+          "complexity": 14,
+          "has_docstring": true,
+          "arg_count": 2
+        }
+      ],
+      "functions_without_doc": 5
+    }
+  },
+  "structure": {
+    "has_init_files": false,
+    "has_main_entry": true,
+    "has_config_files": false,
+    "has_test_structure": true,
+    "directory_depth": 2
+  },
+  "dependencies": {
+    "external_imports": "{'plotly', 'yaml', 'pandas', 'tqdm', 'argparse', 'numpy', 'src', 'matplotlib', 'seaborn', 'traceback', 'git', 'pytz', 'tempfile', 'pickle', 'shutil'}",
+    "standard_lib_imports": "{'collections', 'logging', 'sys', 'json', 'os', 'subprocess', 'pathlib', 'datetime', 're'}",
+    "import_counts": {
+      "argparse": 2,
+      "yaml": 3,
+      "pandas": 7,
+      "pathlib": 7,
+      "datetime": 5,
+      "matplotlib": 3,
+      "seaborn": 2,
+      "src": 5,
+      "git": 3,
+      "os": 4,
+      "numpy": 4,
+      "re": 3,
+      "collections": 2,
+      "tqdm": 3,
+      "subprocess": 2,
+      "tempfile": 2,
+      "pytz": 1,
+      "traceback": 1,
+      "shutil": 1,
+      "json": 1,
+      "pickle": 1,
+      "logging": 1,
+      "sys": 1,
+      "plotly": 3
+    },
+    "module_imports": {
+      "basic_analysis.py": [
+        "argparse",
+        "yaml",
+        "pandas",
+        "pathlib",
+        "datetime",
+        "matplotlib",
+        "seaborn",
+        "src"
+      ],
+      "main.py": [
+        "argparse",
+        "yaml",
+        "pandas",
+        "pathlib",
+        "datetime",
+        "src",
+        "src",
+        "src",
+        "src",
+        "git",
+        "os"
+      ],
+      "src/code_analyzer.py": [
+        "pandas",
+        "numpy",
+        "pathlib",
+        "datetime",
+        "re",
+        "collections",
+        "tqdm",
+        "os",
+        "subprocess",
+        "tempfile"
+      ],
+      "src/fix_git_date.py": [
+        "os"
+      ],
+      "src/git_analyzer.py": [
+        "pandas",
+        "git",
+        "git",
+        "datetime",
+        "pathlib",
+        "tqdm",
+        "re",
+        "collections",
+        "pytz",
+        "traceback"
+      ],
+      "src/test_analyzer.py": [
+        "pandas",
+        "numpy",
+        "pathlib",
+        "re",
+        "tqdm",
+        "subprocess",
+        "tempfile",
+        "os",
+        "shutil"
+      ],
+      "src/utils.py": [
+        "json",
+        "yaml",
+        "pickle",
+        "datetime",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "logging",
+        "sys"
+      ],
+      "src/visualization.py": [
+        "matplotlib",
+        "seaborn",
+        "plotly",
+        "plotly",
+        "plotly",
+        "pandas",
+        "numpy",
+        "pathlib",
+        "matplotlib"
+      ]
+    },
+    "categorized": {
+      "数据分析库": [
+        "plotly",
+        "pandas",
+        "numpy",
+        "matplotlib",
+        "seaborn"
+      ],
+      "Web框架": [],
+      "其他": [
+        "yaml",
+        "tqdm",
+        "argparse",
+        "src",
+        "traceback",
+        "git",
+        "pytz",
+        "tempfile",
+        "pickle",
+        "shutil"
+      ]
+    }
+  },
+  "summary": {
+    "python_file_count": 9,
+    "total_file_count": 25,
+    "function_count": 56,
+    "avg_complexity": 5.321428571428571,
+    "max_complexity": 29,
+    "high_complexity_count": 7,
+    "doc_coverage": 91.07142857142857,
+    "has_main_entry": true,
+    "has_tests": true,
+    "has_config": false,
+    "directory_depth": 2,
+    "external_deps_count": 15
+  }
+}

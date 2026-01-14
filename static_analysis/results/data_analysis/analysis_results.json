@@ -1,0 +1,258 @@
+{
+  "info": {
+    "name": "基础统计分析",
+    "description": "负责Flask项目的活跃度、时间趋势等基础分析",
+    "include_patterns": [
+      "analysis_basic.py",
+      "collect_git.py",
+      "preprocess.py",
+      "utils.py",
+      "main.py",
+      "src/",
+      "data/",
+      "figures/"
+    ],
+    "exclude_patterns": [
+      "flask/",
+      "__pycache__/",
+      "venv/",
+      ".git/",
+      "test_",
+      "_test.py"
+    ]
+  },
+  "file_analysis": {
+    "total_files": 27,
+    "included_files": [
+      "main.py",
+      "data/processed/basic_stats.json",
+      "data/processed/commits.csv",
+      "data/raw/commits_raw.csv",
+      "figures/commit_type_monthly.png",
+      "figures/commit_type_overall.png",
+      "figures/monthly_commits.png",
+      "figures/monthly_contributors.png",
+      "figures/monthly_insertions_deletions.png",
+      "figures/weekend_ratio.png",
+      "src/analysis_basic.py",
+      "src/collect_git.py",
+      "src/preprocess.py",
+      "src/utils.py"
+    ],
+    "excluded_files": [
+      "flask/.editorconfig",
+      "flask/.gitignore",
+      "flask/.pre-commit-config.yaml",
+      "flask/.readthedocs.yaml",
+      "flask/CHANGES.rst",
+      "flask/LICENSE.txt",
+      "flask/pyproject.toml",
+      "flask/README.md",
+      "flask/uv.lock",
+      "src/__pycache__/analysis_basic.cpython-39.pyc",
+      "src/__pycache__/collect_git.cpython-39.pyc",
+      "src/__pycache__/preprocess.cpython-39.pyc",
+      "src/__pycache__/utils.cpython-39.pyc"
+    ],
+    "python_files": [
+      "main.py",
+      "src/analysis_basic.py",
+      "src/collect_git.py",
+      "src/preprocess.py",
+      "src/utils.py"
+    ],
+    "other_files": [
+      "data/processed/basic_stats.json",
+      "data/processed/commits.csv",
+      "data/raw/commits_raw.csv",
+      "figures/commit_type_monthly.png",
+      "figures/commit_type_overall.png",
+      "figures/monthly_commits.png",
+      "figures/monthly_contributors.png",
+      "figures/monthly_insertions_deletions.png",
+      "figures/weekend_ratio.png"
+    ],
+    "file_categories": {
+      "入口文件": [
+        "main.py"
+      ],
+      "核心代码": [
+        "src/analysis_basic.py",
+        "src/collect_git.py",
+        "src/preprocess.py"
+      ],
+      "工具函数": [
+        "src/utils.py"
+      ]
+    }
+  },
+  "complexity": {
+    "functions": [
+      {
+        "name": "main",
+        "file": "main.py",
+        "line": 7,
+        "complexity": 3,
+        "has_docstring": false,
+        "arg_count": 0
+      },
+      {
+        "name": "classify_commit_message",
+        "file": "src/analysis_basic.py",
+        "line": 7,
+        "complexity": 8,
+        "has_docstring": true,
+        "arg_count": 1
+      },
+      {
+        "name": "plot_series",
+        "file": "src/analysis_basic.py",
+        "line": 28,
+        "complexity": 1,
+        "has_docstring": false,
+        "arg_count": 6
+      },
+      {
+        "name": "plot_bar",
+        "file": "src/analysis_basic.py",
+        "line": 40,
+        "complexity": 1,
+        "has_docstring": false,
+        "arg_count": 6
+      },
+      {
+        "name": "plot_stacked_bar",
+        "file": "src/analysis_basic.py",
+        "line": 52,
+        "complexity": 1,
+        "has_docstring": false,
+        "arg_count": 9
+      },
+      {
+        "name": "run_basic_analysis",
+        "file": "src/analysis_basic.py",
+        "line": 66,
+        "complexity": 4,
+        "has_docstring": true,
+        "arg_count": 3
+      },
+      {
+        "name": "collect_commits",
+        "file": "src/collect_git.py",
+        "line": 8,
+        "complexity": 5,
+        "has_docstring": true,
+        "arg_count": 5
+      },
+      {
+        "name": "preprocess",
+        "file": "src/preprocess.py",
+        "line": 6,
+        "complexity": 2,
+        "has_docstring": true,
+        "arg_count": 2
+      },
+      {
+        "name": "ensure_dir",
+        "file": "src/utils.py",
+        "line": 5,
+        "complexity": 1,
+        "has_docstring": true,
+        "arg_count": 1
+      },
+      {
+        "name": "project_paths",
+        "file": "src/utils.py",
+        "line": 10,
+        "complexity": 1,
+        "has_docstring": true,
+        "arg_count": 0
+      }
+    ],
+    "overall": {
+      "function_count": 10,
+      "total_complexity": 27,
+      "avg_complexity": 2.7,
+      "max_complexity": 8,
+      "high_complexity_funcs": [],
+      "functions_without_doc": 4
+    }
+  },
+  "structure": {
+    "has_init_files": false,
+    "has_main_entry": true,
+    "has_config_files": false,
+    "has_test_structure": false,
+    "directory_depth": 2
+  },
+  "dependencies": {
+    "external_imports": "{'pandas', 'pydriller', 'src', 'matplotlib', 'utils'}",
+    "standard_lib_imports": "{'pathlib', 'datetime', 'os'}",
+    "import_counts": {
+      "src": 4,
+      "pandas": 3,
+      "matplotlib": 1,
+      "pathlib": 4,
+      "utils": 3,
+      "pydriller": 1,
+      "datetime": 1,
+      "os": 1
+    },
+    "module_imports": {
+      "main.py": [
+        "src",
+        "src",
+        "src",
+        "src"
+      ],
+      "src/analysis_basic.py": [
+        "pandas",
+        "matplotlib",
+        "pathlib",
+        "utils"
+      ],
+      "src/collect_git.py": [
+        "pandas",
+        "pydriller",
+        "datetime",
+        "pathlib",
+        "utils"
+      ],
+      "src/preprocess.py": [
+        "pandas",
+        "pathlib",
+        "utils"
+      ],
+      "src/utils.py": [
+        "os",
+        "pathlib"
+      ]
+    },
+    "categorized": {
+      "数据分析库": [
+        "pandas",
+        "matplotlib"
+      ],
+      "Web框架": [],
+      "其他": [
+        "pydriller",
+        "src",
+        "utils"
+      ]
+    }
+  },
+  "summary": {
+    "python_file_count": 5,
+    "total_file_count": 14,
+    "function_count": 10,
+    "avg_complexity": 2.7,
+    "max_complexity": 8,
+    "high_complexity_count": 0,
+    "doc_coverage": 60.0,
+    "has_main_entry": true,
+    "has_tests": false,
+    "has_config": false,
+    "directory_depth": 2,
+    "external_deps_count": 5
+  }
+}

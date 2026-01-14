@@ -1,0 +1,301 @@
+{
+  "info": {
+    "name": "贡献者分析",
+    "description": "负责贡献者排名、社区结构、开发模式分析",
+    "include_patterns": [
+      "analytics/",
+      "routes/",
+      "collector/",
+      "tools/",
+      "debug.py",
+      "repo.py",
+      "stats.py",
+      "models.py",
+      "run.py",
+      "data/",
+      "reports/"
+    ],
+    "exclude_patterns": [
+      "flask/",
+      "__pycache__/",
+      "venv/",
+      ".git/"
+    ]
+  },
+  "file_analysis": {
+    "total_files": 35,
+    "included_files": [
+      "run.py",
+      "app/models.py",
+      "app/routes/debug.py",
+      "app/routes/repo.py",
+      "app/routes/stats.py",
+      "reports/figures/community_active_new_lost.png",
+      "reports/figures/kpi_summary.txt",
+      "reports/figures/top_contributors.png",
+      "reports/figures/trend_churn_month.png",
+      "reports/figures/trend_commits_month.png",
+      "tools/export_figures.py"
+    ],
+    "excluded_files": [
+      "activity_repo1.json",
+      "contributors_summary_repo1.json",
+      "requirements.txt",
+      "top_contributors_repo1.json",
+      "trend_month_repo1.json",
+      "trend_month_repo1_raw.json",
+      "app/__init__.py",
+      "app/analytics/basic_stats.py",
+      "app/analytics/contributors.py",
+      "app/collector/extract.py",
+      "app/collector/ingest.py",
+      "app/collector/preprocess.py",
+      "app/collector/repo_ops.py",
+      "app/routes/contributors.py",
+      "data/repos/https_github_com_pallets_flask/.editorconfig",
+      "data/repos/https_github_com_pallets_flask/.gitignore",
+      "data/repos/https_github_com_pallets_flask/.pre-commit-config.yaml",
+      "data/repos/https_github_com_pallets_flask/.readthedocs.yaml",
+      "data/repos/https_github_com_pallets_flask/CHANGES.rst",
+      "data/repos/https_github_com_pallets_flask/LICENSE.txt",
+      "data/repos/https_github_com_pallets_flask/pyproject.toml",
+      "data/repos/https_github_com_pallets_flask/README.md",
+      "data/repos/https_github_com_pallets_flask/uv.lock",
+      "instance/app.db"
+    ],
+    "python_files": [
+      "run.py",
+      "app/models.py",
+      "app/routes/debug.py",
+      "app/routes/repo.py",
+      "app/routes/stats.py",
+      "tools/export_figures.py"
+    ],
+    "other_files": [
+      "reports/figures/community_active_new_lost.png",
+      "reports/figures/kpi_summary.txt",
+      "reports/figures/top_contributors.png",
+      "reports/figures/trend_churn_month.png",
+      "reports/figures/trend_commits_month.png"
+    ],
+    "file_categories": {
+      "入口文件": [
+        "run.py"
+      ],
+      "核心代码": [
+        "app/models.py",
+        "app/routes/debug.py",
+        "app/routes/repo.py",
+        "app/routes/stats.py",
+        "tools/export_figures.py"
+      ]
+    }
+  },
+  "complexity": {
+    "functions": [
+      {
+        "name": "counts",
+        "file": "app/routes/debug.py",
+        "line": 7,
+        "complexity": 1,
+        "has_docstring": false,
+        "arg_count": 0
+      },
+      {
+        "name": "time_range",
+        "file": "app/routes/debug.py",
+        "line": 13,
+        "complexity": 3,
+        "has_docstring": false,
+        "arg_count": 0
+      },
+      {
+        "name": "import_repo",
+        "file": "app/routes/repo.py",
+        "line": 12,
+        "complexity": 2,
+        "has_docstring": false,
+        "arg_count": 0
+      },
+      {
+        "name": "activity",
+        "file": "app/routes/stats.py",
+        "line": 10,
+        "complexity": 1,
+        "has_docstring": false,
+        "arg_count": 0
+      },
+      {
+        "name": "trend",
+        "file": "app/routes/stats.py",
+        "line": 17,
+        "complexity": 2,
+        "has_docstring": false,
+        "arg_count": 0
+      },
+      {
+        "name": "top",
+        "file": "app/routes/stats.py",
+        "line": 26,
+        "complexity": 2,
+        "has_docstring": false,
+        "arg_count": 0
+      },
+      {
+        "name": "load_json",
+        "file": "tools/export_figures.py",
+        "line": 19,
+        "complexity": 1,
+        "has_docstring": false,
+        "arg_count": 1
+      },
+      {
+        "name": "save_fig",
+        "file": "tools/export_figures.py",
+        "line": 24,
+        "complexity": 1,
+        "has_docstring": false,
+        "arg_count": 1
+      },
+      {
+        "name": "plot_trend_commits",
+        "file": "tools/export_figures.py",
+        "line": 32,
+        "complexity": 1,
+        "has_docstring": false,
+        "arg_count": 1
+      },
+      {
+        "name": "plot_trend_churn",
+        "file": "tools/export_figures.py",
+        "line": 46,
+        "complexity": 1,
+        "has_docstring": false,
+        "arg_count": 1
+      },
+      {
+        "name": "plot_top_contributors",
+        "file": "tools/export_figures.py",
+        "line": 60,
+        "complexity": 4,
+        "has_docstring": false,
+        "arg_count": 1
+      },
+      {
+        "name": "plot_community",
+        "file": "tools/export_figures.py",
+        "line": 79,
+        "complexity": 1,
+        "has_docstring": false,
+        "arg_count": 1
+      },
+      {
+        "name": "export_kpi_text",
+        "file": "tools/export_figures.py",
+        "line": 100,
+        "complexity": 1,
+        "has_docstring": true,
+        "arg_count": 2
+      },
+      {
+        "name": "main",
+        "file": "tools/export_figures.py",
+        "line": 126,
+        "complexity": 3,
+        "has_docstring": false,
+        "arg_count": 0
+      }
+    ],
+    "overall": {
+      "function_count": 14,
+      "total_complexity": 24,
+      "avg_complexity": 1.7142857142857142,
+      "max_complexity": 4,
+      "high_complexity_funcs": [],
+      "functions_without_doc": 13
+    }
+  },
+  "structure": {
+    "has_init_files": false,
+    "has_main_entry": true,
+    "has_config_files": false,
+    "has_test_structure": false,
+    "directory_depth": 2
+  },
+  "dependencies": {
+    "external_imports": "{'app', 'flask', 'flask_sqlalchemy', 'matplotlib', '__future__'}",
+    "standard_lib_imports": "{'json', 'pathlib', 'datetime', 'os'}",
+    "import_counts": {
+      "app": 8,
+      "__future__": 3,
+      "datetime": 1,
+      "flask_sqlalchemy": 1,
+      "flask": 3,
+      "json": 1,
+      "os": 1,
+      "pathlib": 1,
+      "matplotlib": 1
+    },
+    "module_imports": {
+      "run.py": [
+        "app"
+      ],
+      "app/models.py": [
+        "__future__",
+        "datetime",
+        "flask_sqlalchemy"
+      ],
+      "app/routes/debug.py": [
+        "flask",
+        "app"
+      ],
+      "app/routes/repo.py": [
+        "__future__",
+        "flask",
+        "app",
+        "app",
+        "app",
+        "app",
+        "app"
+      ],
+      "app/routes/stats.py": [
+        "__future__",
+        "flask",
+        "app"
+      ],
+      "tools/export_figures.py": [
+        "json",
+        "os",
+        "pathlib",
+        "matplotlib"
+      ]
+    },
+    "categorized": {
+      "数据分析库": [
+        "matplotlib"
+      ],
+      "Web框架": [
+        "flask"
+      ],
+      "其他": [
+        "app",
+        "flask_sqlalchemy",
+        "__future__"
+      ]
+    }
+  },
+  "summary": {
+    "python_file_count": 6,
+    "total_file_count": 11,
+    "function_count": 14,
+    "avg_complexity": 1.7142857142857142,
+    "max_complexity": 4,
+    "high_complexity_count": 0,
+    "doc_coverage": 7.14285714285714,
+    "has_main_entry": true,
+    "has_tests": false,
+    "has_config": false,
+    "directory_depth": 2,
+    "external_deps_count": 5
+  }
+}
